@@ -2,16 +2,34 @@
     
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #9BCE8B;
+    font-family: Arial, Helvetica, sans-serif;    
     list-style: nome;
-
+    text-decoration: nome;
     
 }
 
-a{
-    text-decoration: nome;
+li{
+    list-style-type: none;
 }
+
+a{
+    color: inherit;
+}
+
+a:link{
+    text-decoration:none;
+    
+}
+
+body{
+    background: #9BCE8B;
+    list-style: nome;
+    text-decoration: nome;
+
+}
+/*NAV*/
+
+
 .header{
     background: #65B53D;
     display: flex;
@@ -36,3 +54,39 @@ a{
     padding: 10px;
     display: block;
 }
+
+/*NAV FIM*/
+
+/*DIVs Index*/
+
+.div_apresentacao{
+    margin: 120px 100px 200px 100px;
+    text-align: center;
+    
+
+}
+
+.menu_2{
+    display: flex;
+    flex-wrap:  wrap;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.menu_2 li a{
+    margin-left: 3px;
+    
+    
+
+}
+
+.menu_2 input{
+    padding: 7px;
+    border-radius: 20px;
+}
+
+
+
+/*DIVs Index FIM*/
