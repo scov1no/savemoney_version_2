@@ -27,16 +27,23 @@ body{
     text-decoration: nome;
 
 }
+
+hr {
+    width:100%;
+    border:8px solid;
+    border-color:#5e9d5e #060 #d1e3d1;
+    height:16px;
+}
 /*NAV*/
 
 
 .header{
-    background: #65B53D;
+    background: transparent;
     display: flex;
     flex-wrap:  wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px 20px 0px;
     color: white;
 
 }
@@ -47,13 +54,51 @@ body{
 
 .menu li{
     margin-left: 10px;
-
-}
-
-.menu li a{
+    padding-left: 7px;
+    transition: all .5s;
+    border: 10px solid transparent;
     padding: 10px;
-    display: block;
+
 }
+
+.menu li:hover{
+    
+    border: 10px solid white;
+    border-radius: 20%;
+}
+
+.header_2{
+    background: transparent;
+    display: flex;
+    flex-wrap:  wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 0px;
+    color: #5e9d5e;
+
+}
+.menu_3{
+    display: flex;
+}
+
+.menu_3 li{
+    margin-left: 10px;
+    padding-left: 7px;
+    transition: all .5s;
+    border: 10px solid transparent;
+    padding: 10px;
+
+}
+
+.menu_3 li:hover{
+    
+    border: 10px solid #5e9d5e;
+    border-radius: 20%;
+}
+
+
+
+
 
 /*NAV FIM*/
 
@@ -66,7 +111,7 @@ body{
 
 }
 
-.menu_2{
+.apresent{
     display: flex;
     flex-wrap:  wrap;
     justify-content: center;
@@ -75,16 +120,19 @@ body{
     
 }
 
-.menu_2 li a{
+.apresent li a{
     margin-left: 3px;
-    
+    padding-left: 10px;
     
 
 }
 
-.menu_2 input{
+.apresent input{
     padding: 7px;
     border-radius: 20px;
+    background: #55bd55;
+    color: white;
+    border-color: white;
 }
 
 .div_obj{
@@ -162,18 +210,6 @@ body{
     
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
