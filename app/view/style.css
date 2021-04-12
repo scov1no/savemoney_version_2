@@ -211,7 +211,99 @@ hr {
     
 }
 
+/*dashaboard*/
+
+.container_preview{
+    margin-top: 4px;
+    display:flex;
+    flex-wrap:wrap ;
+    justify-content: space-between;
+}
+.nav_left{
+    width: 10%;
+    
+    padding: 0px;
+    border: solid;
+}
+.list_nav_left li{
+
+
+}
+
+
+.preview{
+    width: 87%;
+    margin: 0px, 10px, 0;
+    border-style: solid;
+    border:rgb(84, 153, 84);
+    display: flex;
+    display:  wrap;
+
+
+}
 
 
 
+.preview_conta{
+    
+    width: 90%;
+    border:black;
+    border-style:solid;
+
+}
+
+.preview_saldo{
+
+}
+
+.preview_lista{
+
+}
+/*
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    margin-left: 10px;
+    padding-left: 7px;
+    transition: all .5s;
+    border: 10px solid transparent;
+    padding: 10px;
+
+}
+
+.menu li:hover{
+    
+    border: 10px solid white;
+    border-radius: 20%;
+}
+li{
+    list-style-type: none;
+}
+
+a{
+    color: inherit;
+}
+
+a:link{
+    text-decoration:none;
+    
+}
+
+body{
+    background: #9BCE8B;
+    list-style: nome;
+    text-decoration: nome;
+
+}
+
+hr {
+    width:100%;
+    border:8px solid;
+    border-color:#5e9d5e #060 #d1e3d1;
+    height:16px;
+}
+*/
 
