@@ -1,3 +1,4 @@
+/*
 *{
     
     margin: 0px;
@@ -34,7 +35,7 @@ hr {
     border-color:#5e9d5e #060 #d1e3d1;
     height:16px;
 }
-/*NAV*/
+
 
 
 .header{
@@ -100,9 +101,7 @@ hr {
 
 
 
-/*NAV FIM*/
 
-/*DIVs Index*/
 
 .div_apresentacao{
     margin: 120px 100px 200px 100px;
@@ -180,7 +179,6 @@ hr {
      
  }
 
-/*PAGE SIGN UP*/
 
 
 .cadastro_form{
@@ -211,7 +209,7 @@ hr {
     
 }
 
-/*dashaboard*/
+
 
 .container_preview{
     margin-top: 4px;
@@ -244,66 +242,57 @@ hr {
 
 
 
-.preview_conta{
-    
-    width: 90%;
-    border:black;
-    border-style:solid;
+
+
+
+
+
+.container_grid_dashboard{
+     
+    display: grid;
+    grid-template-areas:
+        "Nav_left view";
+    grid-template-columns: 4fr 8fr;
+    grid-template-rows: 80vh 100vh 0vh;
+    margin: 30px 10px 0px;
 
 }
 
-.preview_saldo{
 
+.nav_left{
+     border-style: solid;
+     grid-area: Nav_left ;
 }
 
-.preview_lista{
-
-}
-/*
-
-.menu{
-    display: flex;
-}
-
-.menu li{
-    margin-left: 10px;
-    padding-left: 7px;
-    transition: all .5s;
-    border: 10px solid transparent;
-    padding: 10px;
-
-}
-
-.menu li:hover{
-    
-    border: 10px solid white;
-    border-radius: 20%;
-}
-li{
-    list-style-type: none;
-}
-
-a{
-    color: inherit;
-}
-
-a:link{
-    text-decoration:none;
-    
-}
-
-body{
-    background: #9BCE8B;
-    list-style: nome;
-    text-decoration: nome;
-
-}
-
-hr {
-    width:100%;
-    border:8px solid;
-    border-color:#5e9d5e #060 #d1e3d1;
-    height:16px;
+.View_dashboard{
+    border-style: solid;
+    grid-area: view;   
 }
 */
 
+
+html {
+    font-family: sans-serif;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  header {
+    background: purple;
+    height: 100px;
+  }
+
+  h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+  }
+
+  article {
+    padding: 10px;
+    margin: 10px;
+    background: aqua;
+  }
