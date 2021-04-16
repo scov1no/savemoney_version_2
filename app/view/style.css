@@ -1,4 +1,4 @@
-/*
+
 *{
     
     margin: 0px;
@@ -211,34 +211,6 @@ hr {
 
 
 
-.container_preview{
-    margin-top: 4px;
-    display:flex;
-    flex-wrap:wrap ;
-    justify-content: space-between;
-}
-.nav_left{
-    width: 10%;
-    
-    padding: 0px;
-    border: solid;
-}
-.list_nav_left li{
-
-
-}
-
-
-.preview{
-    width: 87%;
-    margin: 0px, 10px, 0;
-    border-style: solid;
-    border:rgb(84, 153, 84);
-    display: flex;
-    display:  wrap;
-
-
-}
 
 
 
@@ -247,84 +219,43 @@ hr {
 
 
 
-.container_grid_dashboard{
-     
-    display: grid;
-    grid-template-areas:
-        "Nav_left view";
-    grid-template-columns: 4fr 8fr;
-    grid-template-rows: 80vh 100vh 0vh;
-    margin: 30px 10px 0px;
-
-}
 
 
-.nav_left{
-     border-style: solid;
-     grid-area: Nav_left ;
-}
-
-.View_dashboard{
-    border-style: solid;
-    grid-area: view;   
-}
-*/
 
 
-html {
-    font-family: sans-serif;
-  }
 
-  body {
-    margin: 0;
-  }
-
-  header {
+h1{
+    width: 100%;
     background: purple;
-    height: 100px;
-  }
-
-  h1 {
+    height: 80px;
     text-align: center;
-    color: white;
-    line-height: 100px;
-    margin: 0;
-  }
+    
+}
 
-  article {
-    padding: 10px;
-    margin: 10px;
-    background: aqua;
-  }
+.container{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas:
+      "header header"
+      "button view";
+    
+    
+}
 
-   /* Add your flexbox CSS below here */
+.nav_left{
+    grid-area: button;
+    background: white;
 
-   section {
-    display: flex;
-  }
+}
 
-  article {
-    flex: 1 200px;
-  }
 
-  article:nth-of-type(3) {
-    flex: 3 200px;
-    display: flex;
-    flex-flow: column;
-  }
-
-  article:nth-of-type(3) div:first-child {
-    flex: 1 100px;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  button {
-    flex: 1 auto;
-    margin: 5px;
-    font-size: 18px;
+.nav_left_button{
+    flex: 1 10px;
     line-height: 1.5;
-  }
-  
+    font-size: 10px;
+    margin: 5px;
+    border: nome;
+    
+}
+
+
