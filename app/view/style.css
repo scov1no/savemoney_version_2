@@ -1,3 +1,4 @@
+
 *{
     
     margin: 0px;
@@ -34,7 +35,7 @@ hr {
     border-color:#5e9d5e #060 #d1e3d1;
     height:16px;
 }
-/*NAV*/
+
 
 
 .header{
@@ -100,9 +101,7 @@ hr {
 
 
 
-/*NAV FIM*/
 
-/*DIVs Index*/
 
 .div_apresentacao{
     margin: 120px 100px 200px 100px;
@@ -180,7 +179,6 @@ hr {
      
  }
 
-/*PAGE SIGN UP*/
 
 
 .cadastro_form{
@@ -211,99 +209,53 @@ hr {
     
 }
 
-/*dashaboard*/
 
-.container_preview{
-    margin-top: 4px;
-    display:flex;
-    flex-wrap:wrap ;
-    justify-content: space-between;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1{
+    width: 100%;
+    background: purple;
+    height: 80px;
+    text-align: center;
+    
 }
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas:
+      "header header"
+      "button view";
+    
+    
+}
+
 .nav_left{
-    width: 10%;
-    
-    padding: 0px;
-    border: solid;
-}
-.list_nav_left li{
-
+    grid-area: button;
+    background: white;
 
 }
 
 
-.preview{
-    width: 87%;
-    margin: 0px, 10px, 0;
-    border-style: solid;
-    border:rgb(84, 153, 84);
-    display: flex;
-    display:  wrap;
-
-
-}
-
-
-
-.preview_conta{
-    
-    width: 90%;
-    border:black;
-    border-style:solid;
-
-}
-
-.preview_saldo{
-
-}
-
-.preview_lista{
-
-}
-/*
-
-.menu{
-    display: flex;
-}
-
-.menu li{
-    margin-left: 10px;
-    padding-left: 7px;
-    transition: all .5s;
-    border: 10px solid transparent;
-    padding: 10px;
-
-}
-
-.menu li:hover{
-    
-    border: 10px solid white;
-    border-radius: 20%;
-}
-li{
-    list-style-type: none;
-}
-
-a{
-    color: inherit;
-}
-
-a:link{
-    text-decoration:none;
+.nav_left_button{
+    flex: 1 10px;
+    line-height: 1.5;
+    font-size: 10px;
+    margin: 5px;
+    border: nome;
     
 }
 
-body{
-    background: #9BCE8B;
-    list-style: nome;
-    text-decoration: nome;
-
-}
-
-hr {
-    width:100%;
-    border:8px solid;
-    border-color:#5e9d5e #060 #d1e3d1;
-    height:16px;
-}
-*/
 
