@@ -1,13 +1,55 @@
 
-*{
-    
-    margin: 0px;
-    padding: 0px;
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;    
     list-style: nome;
     text-decoration: nome;
     
 }
+
+
+
+/*GRID-TEMPLATE*/
+
+
+header{
+    background: white;
+    grid-area: h;
+    padding: 5px;
+}
+
+aside{
+    padding: 0px 50px 0px 0px;
+    background: white;
+    grid-area: a;
+
+}
+
+main{
+    background: white;
+    grid-area: m;
+    align-items: center;
+    
+
+}
+
+.container{
+
+    display: grid;
+    grid-template-columns: 10vh 3fr;    
+    grid-template-rows: 10vh 90vh;
+    grid-template-areas: "h h"
+                        "a m";
+    
+    
+}
+
+/* END GRID*/
+
+
+
 
 li{
     list-style-type: none;
@@ -35,8 +77,6 @@ hr {
     border-color:#5e9d5e #060 #d1e3d1;
     height:16px;
 }
-
-
 
 .header{
     background: transparent;
@@ -203,7 +243,7 @@ hr {
 }
 
 #cadastro{
-    background: #65B53D;
+    background:  #81C95C;
     border-radius: 30px;
     
     
@@ -212,50 +252,26 @@ hr {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-h1{
-    width: 100%;
-    background: purple;
-    height: 80px;
-    text-align: center;
-    
+.icon_align{
+  padding: 0px 20px 0px;
 }
 
-.container{
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-areas:
-      "header header"
-      "button view";
-    
-    
-}
-
-.nav_left{
-    grid-area: button;
-    background: white;
-
+.icon_align li{
+    padding-top: 20px;
 }
 
 
-.nav_left_button{
-    flex: 1 10px;
-    line-height: 1.5;
-    font-size: 10px;
-    margin: 5px;
-    border: nome;
-    
+.div_view{
+    background: #81C95C;
+    padding: 10px;
+    margin: 20px;
 }
+
+
+
+
+
+
+
 
 
