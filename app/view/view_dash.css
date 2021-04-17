@@ -16,25 +16,28 @@ html, body{
 
     display: grid;
     grid-template-columns: 300px 1fr 1fr;    
-    grid-template-rows: 50px 420px;
+    grid-template-rows: 60px 420px;
     grid-template-areas: "header_view header_view header_view"
                         "saldo view_movimentacao view_movimentacao";
-    
+    grid-gap:20px;
+    border-radius: 2%;
     
 }
 
 .apresent_view{
     grid-area: header_view ;
-    background: red;
-    border-radius: 5%;
+    background: #8edf66;
+    border-radius: 3%;
 }
 .view_1{
     grid-area: saldo ;
-    background: darkcyan;
+    background:#8edf66;
+    border-radius: 3%;
 }
 
 .view_2{
     grid-area: view_movimentacao;
-    background: darkkhaki;
+    background: #8edf66;
+    border-radius: 3%;
 }
 /* END GRID*/
