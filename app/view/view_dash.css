@@ -28,11 +28,14 @@ html, body{
     grid-area: header_view ;
     background: #8edf66;
     border-radius: 3%;
+    display: flex;
+    padding: 0px 20px 30px;
 }
 .view_1{
     grid-area: saldo ;
     background:#8edf66;
     border-radius: 3%;
+    text-align: center;
 }
 
 .view_2{
@@ -41,3 +44,7 @@ html, body{
     border-radius: 3%;
 }
 /* END GRID*/
+
+.view_1 button{
+    vertical-align: bottom;
+}
