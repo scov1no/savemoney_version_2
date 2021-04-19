@@ -269,7 +269,30 @@ hr {
 
 
 
+.form_view input{
+    border-radius: 25px;
+    width: 750px;
+    height: 30px;
+    margin-bottom: 10px;
+    border: none;
+    background: #82bf63;    
+    
+    
+}
 
+.footer_pagina{
+    text-align: center;
+    border: solid black ;
+    width: 400px;
+    height: 270px;
+    margin: 30px;
+    
+    
+}
+
+.footer_pagina ul{
+    display: flex;
+}
 
 
 
