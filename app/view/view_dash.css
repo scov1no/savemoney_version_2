@@ -15,33 +15,34 @@ html, body{
 .container_view{
 
     display: grid;
-    grid-template-columns: 300px 1fr 1fr;    
-    grid-template-rows: 60px 420px;
+    grid-template-columns: (auto-fit, 300px  1fr 1fr);    
+    grid-template-rows: 60px 390px;
     grid-template-areas: "header_view header_view header_view"
                         "saldo view_movimentacao view_movimentacao";
     grid-gap:20px;
-    border-radius: 2%;
+    border-radius: 25px;
     
 }
 
 .apresent_view{
     grid-area: header_view ;
     background: #8edf66;
-    border-radius: 3%;
+    border-radius: 15px;
     display: flex;
     padding: 0px 20px 30px;
 }
 .view_1{
     grid-area: saldo ;
     background:#8edf66;
-    border-radius: 3%;
+    border-radius: 15px;
     text-align: center;
 }
 
 .view_2{
     grid-area: view_movimentacao;
     background: #8edf66;
-    border-radius: 3%;
+    border-radius: 15px;
+    text-align: center;
 }
 /* END GRID*/
 
