@@ -159,7 +159,22 @@ a:link{
     padding: 5px;
 }
 .main_index3{
+    margin:30px;
     grid-area: main3;
+    text-align: center;
+    
+}
+.container_cards{
+    justify-content: center;
+    margin:30px;
+    display: grid;
+    grid-template-columns: repeat(5, 100px) ;
+    grid-template-rows: 200px;
+    gap: 20px;
+    color:black;
+}
+.container_cards h3, h4{
+    align-content: end;    
 }
 
 .footer_index{
