@@ -145,8 +145,19 @@ a:link{
 
 .main_index2{
     grid-area: main2;
+    display: flex;
+    padding: 20px;
 }
 
+.main_index2 div {
+    text-align: center;
+    border: 1px white solid;
+    border-radius: 100px;
+    padding: 5px;
+}
+.main_index2  p{
+    padding: 5px;
+}
 .main_index3{
     grid-area: main3;
 }
