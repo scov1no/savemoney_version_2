@@ -88,9 +88,9 @@ a:link{
     grid-template:
     "header header header" 60px
     "main   main   main"  300px
-    "main2  main2  main2" 300px
-    "main3  main3  main3" 300px
-    "footer footer footer" 100PX   
+    "main2  main2  main2" 370px
+    "main3  main3  main3" 420px
+    "footer footer footer" 62PX   
     / 1fr 1fr 1fr
     ;
 }
@@ -115,22 +115,23 @@ a:link{
 
 .main_index1{
     grid-area: main;
-    margin: 20px;
+    margin: 7% 0% 0% 0%;
     text-align: center;
     padding-top: 15px;
     
 }
 
+
 .main_index1 ul{
     display: flex;
-    
-
+    justify-content: center;
+    padding-right: 55px;
 }
 .main_index1 li{
     display: flex;
-    flex-wrap: wrap;
-    
-    padding-left: 20px;
+    flex-wrap: wrap;    
+    padding-left: 10px;
+
 }
 
 .main_index1 input{
@@ -144,33 +145,30 @@ a:link{
 }
 
 .main_index2{
-    grid-area: main2;
+    grid-area: main2;   
+    margin: 3% 0%  0%;
     display: flex;
-    padding: 20px;
 }
 
-.main_index2 div {
+.main_index2  p{    
     text-align: center;
     border: 1px white solid;
     border-radius: 100px;
     padding: 5px;
 }
-.main_index2  p{
-    padding: 5px;
-}
 .main_index3{
-    margin:30px;
+    margin: 2% 0% 0%;
     grid-area: main3;
     text-align: center;
     
 }
 .container_cards{
-    justify-content: center;
-    margin:30px;
+    justify-content: center;    
     display: grid;
-    grid-template-columns: repeat(5, 100px) ;
-    grid-template-rows: 200px;
-    gap: 20px;
+    grid-template-columns: repeat(5, 140px) ;
+    grid-template-rows: 220px;
+    column-gap: 40px;
+    padding: 30px;
     color:black;
 }
 .container_cards h3, h4{
@@ -183,5 +181,19 @@ a:link{
 
 .footer_index{
     grid-area: footer;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: black;
 }
+
+.footer_index ul{
+    display: flex;
+}
+.footer_index li{
+    padding-right: 40px;
+}
+
 
