@@ -22,7 +22,10 @@ a:link{
 .grid{
     display: grid;
 }
-
+:root{
+    --main-radius:5px;
+    --main-padding:5px;
+}
 .container{
     grid-template:
     "header header header" 80px
@@ -59,20 +62,29 @@ a:link{
     grid-area: header;
     border: none;
     background: white;
+    color: #14801d;
     margin: 10px;
     padding: 10px;
+    font-size: 40px;
+    text-align: center;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
 }
 
 .nav{
     grid-area: nav;
     border: none;
     background: white;
-    margin: 10px;    
+    margin: 10px;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);    
 }
 
 .main{
     grid-area: main;
     margin: 10px;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
 }
 
 .nav a{
@@ -80,6 +92,7 @@ a:link{
     justify-content: center;
     padding-top: 60px;
 }
+
 
 
 
@@ -268,3 +281,22 @@ a:link{
     padding-right: 100px;
 }
 
+
+
+
+/*Container responsive*/
+
+@media only screen and (max-width:620px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4fr 3fr;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        ;
+    }
+    .container_index{
+        
+    }
+}
