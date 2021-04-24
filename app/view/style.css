@@ -22,16 +22,14 @@ a:link{
 .grid{
     display: grid;
 }
-:root{
-    --main-radius:5px;
-    --main-padding:5px;
-}
+
 .container{
     grid-template:
     "header header header" 80px
-    "nav    main   main" 470px
+    "nav    main   main" 490px
     / 90px 1fr 1fr
     ;
+    gap: 15px;
 }
 
 .container_dashboard{
@@ -51,13 +49,12 @@ a:link{
     border-radius: 5px;
 }
 
-.item_view{
-    
+.item_view{    
     background: white;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     border-radius: 5px;
-
 }
+
 .header{
     grid-area: header;
     border: none;
@@ -67,31 +64,26 @@ a:link{
     padding: 10px;
     font-size: 40px;
     text-align: center;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
 }
 
 .nav{
     grid-area: nav;
     border: none;
-    background: white;
-    margin: 10px;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);    
+    background: white;  
+    margin: 10px;    
+}
+.nav li{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
 }
 
 .main{
     grid-area: main;
     margin: 10px;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
 }
 
-.nav a{
-    display: flex;
-    justify-content: center;
-    padding-top: 60px;
-}
+
 
 
 
@@ -213,6 +205,38 @@ a:link{
     padding-right: 40px;
 }
 
+/*Container responsive*/
+
+@media only screen and (max-width:620px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.3fr 1fr;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        ;
+    }
+     
+    .container_index{
+        
+    }
+
+    .container_icon{
+        display: flex;
+        justify-content:space-evenly;
+    }
+
+    .container_icon img{
+        width: 50px ;
+        height: 55px;
+    }
+    
+    
+    
+}
+
+
 
 .header_cadastro{
     
@@ -284,45 +308,5 @@ a:link{
 
 
 
-/*Container responsive*/
-
-@media only screen and (max-width:620px){
-    .container{
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 0.2fr 1fr;
-        grid-template-areas: 
-        "header"
-        "nav"
-        "main"
-        ;
-    }
-     
-    .container_index{
-        
-    }
-}
 
 
-.container_icon{        
-    grid-template-columns: repeat(4, 1fr) ;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "1  2  3  4"
-    ;
-}
-
-#icon_1{
-    grid-area: 1;
-}
-
-#icon_2{
-    grid-area: 2;
-}
-
-#icon_3{
-    grid-area: 3;
-}
-
-#icon_4{
-    grid-area: 4;
-}
