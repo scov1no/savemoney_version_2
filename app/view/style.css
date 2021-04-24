@@ -1,9 +1,22 @@
 /*GRID*/
 
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Zen+Dots&display=swap');
+
+
 html, body{
     padding: 0;
     margin: 0;
     background:white ;
+    
+    
+}
+p{
+    font-family: 'Orelega One', cursive;
+}
+
+h1, h2{
+    font-family: 'Orbitron', sans-serif;
 }
 
 li{
