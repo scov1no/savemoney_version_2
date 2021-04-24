@@ -289,14 +289,40 @@ a:link{
 @media only screen and (max-width:620px){
     .container{
         grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 0.4fr 3fr;
+        grid-template-rows: 0.2fr 0.2fr 1fr;
         grid-template-areas: 
         "header"
         "nav"
         "main"
         ;
     }
+     
     .container_index{
         
     }
+}
+
+
+.container_icon{        
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "1  2  3  4"
+    ;
+}
+
+#icon_1{
+    grid-area: 1;
+}
+
+#icon_2{
+    grid-area: 2;
+}
+
+#icon_3{
+    grid-area: 3;
+}
+
+#icon_4{
+    grid-area: 4;
 }
