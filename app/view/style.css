@@ -1,9 +1,22 @@
 /*GRID*/
 
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Zen+Dots&display=swap');
+
+
 html, body{
     padding: 0;
     margin: 0;
     background:white ;
+    
+    
+}
+p{
+    font-family: 'Orelega One', cursive;
+}
+
+h1, h2{
+    font-family: 'Orbitron', sans-serif;
 }
 
 li{
@@ -26,9 +39,10 @@ a:link{
 .container{
     grid-template:
     "header header header" 80px
-    "nav    main   main" 470px
+    "nav    main   main" 490px
     / 90px 1fr 1fr
     ;
+    gap: 15px;
 }
 
 .container_dashboard{
@@ -38,6 +52,57 @@ a:link{
     gap: 15px;
 }
 
+.view_perfil div{
+    text-align: center;
+    margin-top: 10px;
+    color: black;
+    
+}
+.view_perfil p{
+    font-size: 40px;
+    
+}
+
+.view_perfil img{
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    width: 150px;
+    height: 150px;
+    
+}
+
+.view_movimentacoes{
+
+}
+
+.view_movimentacoes div{
+    text-align: center;
+    margin-top: 10px;
+    color: black;
+}
+
+.view_movimentacoes img{
+    width: 150px;
+    height: 150px;
+}
+
+.preview{
+    margin-right: 20px;
+}
+.preview li{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3px;    
+    border: solid 1px black;
+    background: chartreuse;
+    border-radius: 30px;
+    margin-bottom: 4px;
+}
+.preview img{
+    width: 40px;
+    height: 40px;
+}
 
 
 .item{
@@ -48,26 +113,33 @@ a:link{
     border-radius: 5px;
 }
 
-.item_view{
-    
+.item_view{    
     background: white;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     border-radius: 5px;
-
 }
+
 .header{
     grid-area: header;
     border: none;
     background: white;
+    color: #14801d;
     margin: 10px;
     padding: 10px;
+    font-size: 40px;
+    text-align: center;
 }
 
 .nav{
     grid-area: nav;
     border: none;
-    background: white;
+    background: white;  
     margin: 10px;    
+}
+.nav li{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
 }
 
 .main{
@@ -75,11 +147,8 @@ a:link{
     margin: 10px;
 }
 
-.nav a{
-    display: flex;
-    justify-content: center;
-    padding-top: 60px;
-}
+
+
 
 
 
@@ -200,6 +269,44 @@ a:link{
     padding-right: 40px;
 }
 
+/*Container responsive*/
+
+@media only screen and (max-width:620px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.2fr 1fr;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        ;
+    }
+     
+    .container_dashboard{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 400px);
+        grid-template-areas: 
+        "view_perfil"
+        "view_movimentacoes"
+        ;
+        
+    }
+
+    .container_icon{
+        display: flex;
+        justify-content:space-evenly;
+    }
+
+    .container_icon img{
+        width: 50px ;
+        height: 55px;
+    }
+    
+    
+    
+}
+
+
 
 .header_cadastro{
     
@@ -267,4 +374,9 @@ a:link{
 .div_cadastro img{
     padding-right: 100px;
 }
+
+
+
+
+
 
