@@ -52,6 +52,57 @@ a:link{
     gap: 15px;
 }
 
+.view_perfil div{
+    text-align: center;
+    margin-top: 10px;
+    color: black;
+    
+}
+.view_perfil p{
+    font-size: 40px;
+    
+}
+
+.view_perfil img{
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    width: 150px;
+    height: 150px;
+    
+}
+
+.view_movimentacoes{
+
+}
+
+.view_movimentacoes div{
+    text-align: center;
+    margin-top: 10px;
+    color: black;
+}
+
+.view_movimentacoes img{
+    width: 150px;
+    height: 150px;
+}
+
+.preview{
+    margin-right: 20px;
+}
+.preview li{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3px;    
+    border: solid 1px black;
+    background: chartreuse;
+    border-radius: 30px;
+    margin-bottom: 4px;
+}
+.preview img{
+    width: 40px;
+    height: 40px;
+}
 
 
 .item{
@@ -223,7 +274,7 @@ a:link{
 @media only screen and (max-width:620px){
     .container{
         grid-template-columns: 1fr;
-        grid-template-rows: 0.1fr 0.3fr 1fr;
+        grid-template-rows: 0.1fr 0.2fr 1fr;
         grid-template-areas: 
         "header"
         "nav"
@@ -231,7 +282,13 @@ a:link{
         ;
     }
      
-    .container_index{
+    .container_dashboard{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 400px);
+        grid-template-areas: 
+        "view_perfil"
+        "view_movimentacoes"
+        ;
         
     }
 
