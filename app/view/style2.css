@@ -175,19 +175,29 @@ a:link{
 
 .item1_cadastro_login{
     grid-area: header;
-    background: greenyellow;
+    margin: 20px;
+    padding: 10px;    
+}
+
+.item1_cadastro_login a{
 }
 
 .item2_cadastro_login{
     grid-area: main_1;
+    display: flex;
+    align-items: center;
+    margin: 100px;
+   
+}
+
+.item2_cadastro_login form{
+    margin-left: 60px;
     
-    background: grey;
 }
 
 
 .item3_cadastro_login{
     grid-area: footer;
-    background: lightblue;
 }
 
 .container_dashboard{
