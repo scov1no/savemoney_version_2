@@ -271,65 +271,79 @@ a:link{
 }
 
 .container_view_conta{
-    grid-template-columns: 50px 1fr 1fr;
+    grid-template-columns: 60px 1fr 1fr;
     grid-template-rows: 10vh 87vh ;
     grid-template-areas: 
     "header header header" 
     "nav main main2"  
     ;
+    gap: 15px;
+    margin: 15px;
 
 }
 
 .item1_container_view_conta{
     grid-area: header;
-    background: greenyellow;
+    text-align: center;
+    font-size: 40px;
+    padding: 5px;
 }
 
 .item2_container_view_conta{
-    grid-area: nav;    
-    background: grey;
+    grid-area: nav;
+    
+    text-align: center; 
 }
-
+.item2_container_view_conta li{
+    padding-top: 70px;
+}
 
 .item3_container_view_conta{
     grid-area: main;
-    background: lightblue;
+    text-align: center;
 }
 
 .item4_container_view_conta{
     grid-area: main2;
-    background: blue;
+    text-align: center;
 }
 
 .container_view_receita_despesa{
-    grid-template-columns: 50px 1fr 1fr;
+    grid-template-columns: 60px 1fr 1fr;
     grid-template-rows: 10vh 87vh ;
     grid-template-areas: 
     "header header header" 
     "nav main main2"  
     ;
-
+    gap: 15px;
+    margin: 15px;
 }
 
 .item1_container_view_receita_despesa{
     grid-area: header;
-    background: greenyellow;
+    text-align: center;
+    font-size: 40px;
+    padding: 5px;
+
 }
 
 .item2_container_view_receita_despesa{
-    grid-area: nav;    
-    background: grey;
+    grid-area: nav;      
+    text-align: center; 
+}
+.item2_container_view_receita_despesa li{
+    padding-top: 70px;
 }
 
 
 .item3_container_view_receita_despesa{
     grid-area: main;
-    background: lightblue;
+    text-align: center;
 }
 
 .item4_container_view_receita_despesa{
     grid-area: main2;
-    background: blue;
+    text-align: center;
 }
 
 /*Container responsive*/
