@@ -1,0 +1,273 @@
+/*GRID*/
+
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Zen+Dots&display=swap');
+
+
+html, body{
+    padding: 0;
+    margin: 0;
+    background:white ;
+    
+    
+}
+p{
+    font-family: 'Orelega One', cursive;
+}
+
+h1, h2{
+    font-family: 'Orbitron', sans-serif;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    color: inherit;
+}
+
+a:link{
+    text-decoration:none;
+    
+}
+
+.grid{
+    display: grid;
+}
+
+/*Grid*/
+
+.container_index{
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 300px 300px 300px  40px;
+    grid-template-areas: 
+    "header" 
+    "main_1"
+    "main_2"
+    "main_3"
+    "footer"
+    ;
+
+}
+
+.item1_index{
+    grid-area: header;
+    background: greenyellow;
+}
+
+.item2_index{
+    grid-area: main_1;
+    
+    background: grey;
+}
+.item3_index{
+    grid-area: main_2;
+    background: hotpink;
+    
+}
+.item4_index{
+    grid-area: main_3;
+    background: indigo;
+}
+.item5_index{
+    grid-area: footer;
+    background: lightblue;
+}
+
+.container_cadastro_login{
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas: 
+    "header" 
+    "main_1"    
+    "footer"
+    ;
+
+}
+
+.item1_cadastro_login{
+    grid-area: header;
+    background: greenyellow;
+}
+
+.item2_cadastro_login{
+    grid-area: main_1;
+    
+    background: grey;
+}
+
+
+.item3_cadastro_login{
+    grid-area: footer;
+    background: lightblue;
+}
+
+.container_dashboard{
+    grid-template-columns: 50px 1fr 1fr;
+    grid-template-rows: 10vh 87vh ;
+    grid-template-areas: 
+    "header header header" 
+    "nav main main2"  
+    ;
+
+}
+
+.item1_dashboard{
+    grid-area: header;
+    background: greenyellow;
+}
+
+.item2_dashboard{
+    grid-area: nav;    
+    background: grey;
+}
+
+
+.item3_dashboard{
+    grid-area: main;
+    background: lightblue;
+}
+
+.item4_dashboard{
+    grid-area: main2;
+    background: blue;
+}
+
+.container_view_conta{
+    grid-template-columns: 50px 1fr 1fr;
+    grid-template-rows: 10vh 87vh ;
+    grid-template-areas: 
+    "header header header" 
+    "nav main main2"  
+    ;
+
+}
+
+.item1_container_view_conta{
+    grid-area: header;
+    background: greenyellow;
+}
+
+.item2_container_view_conta{
+    grid-area: nav;    
+    background: grey;
+}
+
+
+.item3_container_view_conta{
+    grid-area: main;
+    background: lightblue;
+}
+
+.item4_container_view_conta{
+    grid-area: main2;
+    background: blue;
+}
+
+/*Container responsive*/
+
+@media only screen and (max-width:650px){
+
+    .container_index{
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px repeat(3, 200px) 60px;
+        grid-template-areas: 
+        "header" 
+        "main_1"
+        "main_2"
+        "main_3"
+        "footer"
+        ;
+    
+    }
+    .item1_index{
+        grid-area: header;
+        background: greenyellow;
+    }
+    
+    .item2_index{
+        grid-area: main_1;
+        
+        background: grey;
+    }
+    .item3_index{
+        grid-area: main_2;
+        background: hotpink;
+        
+    }
+    .item4_index{
+        grid-area: main_3;
+        background: indigo;
+    }
+    .item5_index{
+        grid-area: footer;
+        background: lightblue;
+    }
+
+    .container_cadastro_login{
+        grid-template-columns: 1fr;
+        grid-template-rows: 10vh 80vh 10vh;
+        grid-template-areas: 
+        "header" 
+        "main_1"    
+        "footer"
+        ;
+    
+    }
+    
+    .item1_cadastro_login{
+        grid-area: header;
+        background: greenyellow;
+    }
+    
+    .item2_cadastro_login{
+        grid-area: main_1;
+        
+        background: grey;
+    }
+    
+    
+    .item5_cadastro_login{
+        grid-area: footer;
+        background: lightblue;
+    }
+    
+    .container_dashboard{
+        grid-template-columns: 1fr 50px;
+        grid-template-rows: 10vh 200px 200px ;
+        grid-template-areas: 
+        "header nav" 
+        "main main"
+        "main2 main2"   
+        ;
+    
+    }
+    
+    .item1_dashboard{
+        grid-area: header;
+        background: greenyellow;
+    }
+    
+    .item2_dashboard{
+        grid-area: nav;    
+        background: grey;
+    }
+    
+    
+    .item3_dashboard{
+        grid-area: main;
+        background: lightblue;
+    }
+    
+    .item4_dashboard{
+        grid-area: main2;
+        background: blue;
+    }
+    
+    
+}
+
+
+
+
