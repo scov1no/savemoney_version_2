@@ -269,38 +269,49 @@ a:link{
     padding-right: 40px;
 }
 
-.div_receita {    
-     grid-template-columns: 300px;
-     grid-template-rows: 300px 30px;
-     grid-template: 
-     "linha_1"
-     "linha_2"
-     ;
-    
-      
+.container_receita{
+    grid-template: "linha1"
+    "linha2";
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 60px;
+    margin: 30px;
+    color: black;
+    align-content: space-between;    
+    justify-items: center;
 }
 
 .form_1{
-    grid-area: linha_1;
-    background: violet;
+    grid-area: linha1;
     margin: 10px;
 }
 
 
 
 .form_receita_botton{
-    background: yellow;
-    grid-area: linha_2;
+    grid-area: linha2;    
     margin: 10px;    
     display: flex;
+    flex-wrap: wrap;
+    align-items: end ;
+}
+
+.form_receita_botton input{
+    margin-left:10px ;
+    border-radius: 40px;
+    background: chartreuse;
+    border: solid black 1px;
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Orelega One', cursive;
 }
 
 /*Container responsive*/
 
-@media only screen and (max-width:620px){
+@media only screen and (max-width:850px){
     .container{
         grid-template-columns: 1fr;
-        grid-template-rows: 0.1fr 0.2fr 1fr;
+        grid-template-rows: 0.1fr 60px 1fr;
         grid-template-areas: 
         "header"
         "nav"
@@ -319,8 +330,10 @@ a:link{
     }
 
     .container_icon{
+        grid-area: nav ;
         display: flex;
         justify-content:space-evenly;
+        align-items: center;
     }
 
     .container_icon img{
@@ -328,6 +341,37 @@ a:link{
         height: 55px;
     }
     
+    .container_receita{
+        grid-template: "linha1"
+        "linha2";
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 100px;
+        margin: 30px;
+        color: black;
+    } 
+    
+    .form_1{
+        grid-area: linha1;
+    }
+
+    .form_receita_botton{
+        grid-area:linha2;
+        margin: 3px;    
+        display: flex;
+        flex-wrap: wrap;
+        align-items: end ;
+    }
+
+    .form_receita_botton input{
+        margin-left:5px ;
+        border-radius: 40px;
+        background: chartreuse;
+        border: solid black 1px;
+        width: 80px;
+        height: 30px;
+        font-size: 12px;
+        font-family: 'Orelega One', cursive;
+    }
     
     
 }
