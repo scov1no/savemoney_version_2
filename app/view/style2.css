@@ -194,14 +194,32 @@ a:link{
     display: flex;
     align-items: center;
     margin: 100px;
-   
-}
-
-.item2_cadastro_login form{
-    margin-left: 60px;
     
 }
+.item2_cadastro_login  form{
+    margin-left: 100px;
+}
 
+.item2_cadastro_login input{
+    align-items: center;
+    justify-content: space-around;
+    border: solid white 2px;
+    background: #1c8b23 ;
+    border-radius: 30px;
+    color: white;
+    width: 350px;
+    height: 50px;
+    flex-wrap: wrap;
+    display: flex;
+
+    
+}
+#cadastro{
+    margin-top: 20px;
+    width: 200px;
+    margin-left: 70px;
+
+}
 
 .item3_cadastro_login{
     grid-area: footer;
@@ -288,6 +306,26 @@ a:link{
     font-size: 40px;
     padding: 5px;
 }
+.item3_container_view_conta input{
+    align-items: center;
+    justify-content: space-around;
+    border: solid white 2px;
+    background: #1c8b23 ;
+    border-radius: 30px;
+    color: white;
+    width: 350px;
+    height: 50px;
+    flex-wrap: wrap;
+    display: flex;
+    margin-left: 120px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.item3_container_view_conta label{
+    margin-top: 5px;
+    font-size: 20px;
+}
 
 .item2_container_view_conta{
     grid-area: nav;
@@ -298,9 +336,30 @@ a:link{
     padding-top: 70px;
 }
 
+.item4_container_view_conta  input{
+    align-items: center;
+    justify-content: space-around;
+    border: solid white 2px;
+    background: #1c8b23 ;
+    border-radius: 30px;
+    color: white;
+    width: 350px;
+    height: 50px;
+    flex-wrap: wrap;
+    display: flex;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+.item4_container_view_conta label{
+    margin-top: 5px;
+    font-size: 20px;
+}
+
 .item3_container_view_conta{
     grid-area: main;
     text-align: center;
+    padding: 10px;
 }
 
 .item4_container_view_conta{
@@ -364,26 +423,21 @@ a:link{
     }
     .item1_index{
         grid-area: header;
-        background: greenyellow;
     }
     
     .item2_index{
         grid-area: main_1;
-        
-        background: grey;
     }
     .item3_index{
         grid-area: main_2;
-        background: hotpink;
         
     }
     .item4_index{
         grid-area: main_3;
-        background: indigo;
+        
     }
     .item5_index{
         grid-area: footer;
-        background: lightblue;
     }
 
     .container_cadastro_login{
@@ -416,7 +470,7 @@ a:link{
     
     .container_dashboard{
         grid-template-columns: 1fr 50px;
-        grid-template-rows: 10vh 200px 200px ;
+        grid-template-rows: 10vh 500px 500px ;
         grid-template-areas: 
         "header nav" 
         "main main"
@@ -448,7 +502,7 @@ a:link{
     
     .container_view_conta{
         grid-template-columns: 1fr 50px;
-        grid-template-rows: 10vh 200px 200px ;
+        grid-template-rows: 10vh 550px 500px ;
         grid-template-areas: 
         "header nav" 
         "main main"
@@ -459,23 +513,23 @@ a:link{
     
     .item1_container_view_conta{
         grid-area: header;
-        background: greenyellow;
     }
     
     .item2_container_view_conta{
-        grid-area: nav;    
-        background: grey;
+        grid-area: nav;   
     }
     
     
     .item3_container_view_conta{
         grid-area: main;
-        background: lightblue;
+    }
+
+    .item3_container_view_conta input{
+        margin-left: 90px;
     }
     
     .item4_container_view_conta{
         grid-area: main2;
-        background: blue;
     }
     
     .container_view_receita_despesa{
