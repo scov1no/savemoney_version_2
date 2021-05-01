@@ -270,19 +270,22 @@ a:link{
     grid-template-rows: 15vh 70vh ;
     grid-template-areas: 
     "header" 
-    "main_1"    
-    "footer"
+    "main_1"
     ;
 }
 
 .item1_cadastro_login{
     grid-area: header;
-    margin: 20px;
-    padding: 10px;    
+    margin: 20px 30px 0px 30px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.6vw;   
 }
 
-.item1_cadastro_login a{
-}
+
 
 .item2_cadastro_login{
     grid-area: main_1;
@@ -299,17 +302,34 @@ a:link{
     align-items: center;
     justify-content: space-around;
     border: solid white 2px;
-    background: #1c8b23 ;
-    border-radius: 30px;
-    color: white;
+    color: black;
     width: 350px;
     height: 50px;
     flex-wrap: wrap;
     display: flex;
+    background: rgba(56, 101, 86, 0.05);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
 
     
 }
 
+.button_get{  
+    margin: 30px 0px 20px;
+
+
+}
+.button_get input{
+    margin-bottom: 20px;
+}
+.button_get2{  
+    margin-top: 20px;
+
+}
+
+.button.get input{
+    padding-left: 30px;
+}
 .item2_cadastro_login img{
     width: 600px;
     height: 400px;
