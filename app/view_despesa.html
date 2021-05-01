@@ -9,27 +9,81 @@
     <link href="view/style2.css" rel="stylesheet">
 </head>
 <body>
-    <div class=" grid1 container_view_receita_despesa">
-        <div class=" item1_container_view_receita_despesa item">
-           <a href="#">SAVEMONEY</a>
-        </div>
-        <div class=" item2_container_view_receita_despesa "> 
-            <div class="container_icon grid">         
-                <li ><a link="#" class="icon_1"><img src="/app/view/img/icon1.png" width="37px" height="39px"></a></li>
-                <li ><a link="#" class="icon_2"><img src="/app/view/img/icon2.png" width="37px" height="39px"></a></li>
-                <li ><a link="#" class="icon_3"><img src="/app/view/img/icon3.png" width="37px" height="39px"></a></li>
-                <li ><a link="#" class="icon_4"><img src="/app/view/img/icon4.png" width="37px" height="39px"></a></li>
+    <div class=" grid1 container_view_receita_despesa ">
+        <div class=" item1_container_view_receita_despesa">
+            <div class="item1_dashboard item">
+                <a href="#">SAVEMONEY</a>
             </div>
-        </div> <div class="item3_container_view_receita_despesa item">
-                    
         </div>
-        <div class="item4_container_view_receita_despesa item">
-        
-        </div>     
-        
-           
-            
+        <div class=" item2_container_view_receita_despesa item">
+            <div class="">         
+                <li><a link="#" class=""><img src="/app/view/img/icon1.png" width="37px" height="39px"></a></li>
+                <li><a link="#" class=""><img src="https://img.icons8.com/ios/100/000000/money-bag.png" width="39px" height="40px"></a></li>
+                <li><a link="#" class=""><img src="/app/view/img/icon3.png" width="37px" height="39px"></a></li>
+                <li><a link="#" class=""><img src="/app/view/img/icon4.png" width="37px" height="39px"></a></li>
+            </div>
+        </div>
+        <div class=" item3_container_view_receita_despesa item">
+            <h1>Despesas</h1>
+            <div>
+                <ul>
+                    <li>
+                        <img src="view/img/pizza_icon.png"  width="37px" height="39px">
+                        <h3>Alimentação</h3>
+                        <p>R$ 120,00</p>
+                    </li>
+                    <li>
+                        <img src="view/img/car_icon.png"  width="37px" height="39px">
+                        <h3>Manutenção</h3>
+                        <p>R$ 345,99</p>
+                    </li>
+                    <li>
+                        <img src="view/img/money_icon.png"  width="37px" height="39px">
+                        <h3>Pix Juanita</h3>
+                        <p>R$ 3233,65</p>
+                    </li>
+                    <li>
+                        <img src="view/img/pizza_icon.png"  width="37px" height="39px">
+                        <h3>Alimentação</h3>
+                        <p>R$ 53,76</p>
+                    </li>
+                    <li>
+                        <img src="view/img/pizza_icon.png"  width="37px" height="39px">
+                        <h3>Alimentação</h3>
+                        <p>R$ 53,76</p>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class=" item4_container_view_receita_despesa item">
+            <h1>Adicionar</h1>
+            <form action="" method="get" class="form-example">
+                <div class="form-example">
+                  <label for="nome_receita">Nome da receita:</label>
+                  <input type="text" name="nome_receita" id="receita" required>
+                </div>
+                <div class="form-example">
+                  <label for="valor_receita">Valor:</label>
+                  <input type="number" name="valor_receita" id="valor_receita" required>
+                    
+                </div>
+                <div class="form-example">
+                    <label for="data_receita">Data:</label>
+                  <input type="date" name="data_receita" id="data_receita" required>
+                </div>                
+                <div class="form-example">
+                    <label for="descricao_receita">Descrição:</label>
+                    <input type="text" name="descricao_receita" id="descricao_receita" required>
+                </div>
+              </form>
+              <div class="submit_inputs">
+                  <input type="submit" value="Adiconar">
+                  <input type="submit" value="Exclur"> 
+              </div>
+        </div>
     </div>    
+  
    
         
 </body>

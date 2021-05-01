@@ -440,7 +440,7 @@ a:link{
 
 .item2_container_view_receita_despesa{
     grid-area: nav;      
-    text-align: center; 
+    text-align: center;
 }
 .item2_container_view_receita_despesa li{
     padding-top: 70px;
@@ -464,9 +464,30 @@ a:link{
     margin: 20px;
     color: black;
 }
+
 .item4_container_view_receita_despesa div{
     display: flex;
-    margin: 20px;    
+    margin: 20px;
+    flex-wrap: wrap ;
+    justify-content: space-between;
+        
+}
+
+.item4_container_view_receita_despesa input{
+    
+    width: 270px;
+    border-radius: 30px;
+}
+.item4_container_view_receita_despesa label{
+    font-size: 2.5vw;
+}
+
+#descricao_receita{
+    height: 120px;
+}
+
+#data_receita{
+    text-align: center;
 }
 
 .item3_container_view_receita_despesa{
@@ -477,6 +498,16 @@ a:link{
 .item4_container_view_receita_despesa{
     grid-area: main2;
     text-align: center;
+}
+
+.submit_inputs input{
+    margin-top: 20px;
+    height: 40px;
+    border: solid white 2px;
+    background: white;
+    border-radius: 30px;
+    
+    color: black;
 }
 
 /*Container responsive*/
@@ -554,19 +585,15 @@ a:link{
     
     .item1_cadastro_login{
         grid-area: header;
-        background: greenyellow;
     }
     
     .item2_cadastro_login{
         grid-area: main_1;
-        
-        background: grey;
     }
     
     
     .item5_cadastro_login{
         grid-area: footer;
-        background: lightblue;
     }
     
     .container_dashboard{
@@ -612,21 +639,12 @@ a:link{
         grid-area: main2;
     }
     
-    .container_view_conta{
-        grid-template-columns: 1fr 50px;
-        grid-template-rows: 10vh 550px 500px ;
-        grid-template-areas: 
-        "header nav" 
-        "main main"
-        "main2 main2"   
-        ;
-    
-    }
+   
     
         
     .container_view_receita_despesa{
         grid-template-columns: 1fr 50px;
-        grid-template-rows: 10vh 200px 200px ;
+        grid-template-rows: 10vh 70vh 70vh ;
         grid-template-areas: 
         "header nav" 
         "main main"
@@ -637,21 +655,84 @@ a:link{
     
     .item1_container_view_receita_despesa{
         grid-area: header;
+        text-align: center;
+        font-size: 40px;
+    
     }
     
     .item2_container_view_receita_despesa{
-        grid-area: nav;    
+        grid-area: nav;      
+        text-align: center;
+    }
+    .item2_container_view_receita_despesa li{
+        padding-top: 70px;
     }
     
     
     .item3_container_view_receita_despesa{
         grid-area: main;
+        text-align: center;
+    
+    
+    }
+    
+    .item3_container_view_receita_despesa li{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        border: solid white 2px;
+        background: white;
+        border-radius: 30px;
+        margin: 20px;
+        color: black;
+    }
+    
+    .item4_container_view_receita_despesa div{
+        display: flex;
+        margin: 20px;
+        flex-wrap: wrap ;
+        justify-content: space-between;
+            
+    }
+    
+    .item4_container_view_receita_despesa input{
+        
+        width: 290px;
+        border-radius: 30px;
+    }
+    .item4_container_view_receita_despesa label{
+        margin: 10px;
+        font-size: 2.5vw;
+    }
+    
+    #descricao_receita{
+        height: 120px;
+    }
+    
+    #data_receita{
+        text-align: center;
+    }
+    
+    .item3_container_view_receita_despesa{
+    
+    
     }
     
     .item4_container_view_receita_despesa{
         grid-area: main2;
+        text-align: center;
     }
     
+    .submit_inputs input{
+        margin-top: 5px;
+        height: 40px;
+        border: solid white 2px;
+        background: white;
+        border-radius: 30px;
+        
+        color: black;
+    }
 }
 
 
