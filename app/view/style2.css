@@ -11,6 +11,7 @@ html, body{
     
     
 }
+
 p{
     font-family: 'Orelega One', cursive;
 }
@@ -169,6 +170,12 @@ a:link{
     text-align: center;
     padding-top: 15px;
     
+    
+    
+}
+
+.item2_index h2, h1{
+    font-size: 3vw;
 }
 
 
@@ -196,7 +203,8 @@ a:link{
 .item3_index{
     grid-area: main_2;   
     margin: 10% 0%  0%;
-    text-align: right;
+    text-align: center;   
+    font-size: 3vw;
 }
 
 .item3_index div{
@@ -205,6 +213,14 @@ a:link{
 
 .item3_index h2{
     text-align: center;
+}
+
+.item3_index p{
+    
+    margin: 30px;
+    font-size: 2vw;
+    word-wrap: break-word;
+    text-align: end;
 }
 
 
@@ -251,7 +267,7 @@ a:link{
 }
 .container_cadastro_login{
     grid-template-columns: 1fr;
-    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-rows: 15vh 70vh ;
     grid-template-areas: 
     "header" 
     "main_1"    
@@ -293,16 +309,12 @@ a:link{
 
     
 }
-#cadastro{
-    margin-top: 20px;
-    width: 200px;
-    margin-left: 70px;
 
+.item2_cadastro_login img{
+    width: 600px;
+    height: 400px;
 }
 
-.item3_cadastro_login{
-    grid-area: footer;
-}
 
 .container_dashboard{
     grid-template-columns: 60px 1fr 1fr;
@@ -490,7 +502,7 @@ a:link{
 
     .container_index{
         grid-template-columns: 375px;
-        grid-template-rows: 60px repeat(3, 250px) 60px;
+        grid-template-rows: 60px repeat(3, 230px)  60px;
         grid-template-areas: 
         "header" 
         "main_1"
@@ -508,9 +520,15 @@ a:link{
         justify-content:flex-start;    
         align-items: center;
         padding: 0px 20px 0px;
+        word-break: break-all;
         }
     .item1_index button{
         margin-left: 20px;
+    }
+
+    .item1_index h1{
+        font-size: 3vw;
+
     }
     
     
@@ -520,12 +538,16 @@ a:link{
         grid-area: main_1;
     }
     .item3_index{
-        grid-area: main_2;
-        word-break: break-all;
-        min-width: 350px;
-        text-align: center;
+        grid-area: main_2;     
+        
 
         
+    }
+
+    .item3_index p{
+        text-align: justify;
+        word-wrap: break-word;
+
     }
     .item4_index{
         margin-top: 90px;
