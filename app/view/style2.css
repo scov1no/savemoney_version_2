@@ -376,6 +376,18 @@ a:link{
     margin: 20px;
 }
 
+.receitas_view_despesas{
+    display: flex;    
+    justify-content: center;
+}
+
+.receitas_view_despesas div{
+    margin: 10px 30px 0px ;
+    border-radius: 30px;
+    width: 180px;
+    
+}
+
 .item4_dashboard{
     grid-area: main2;
     text-align: center;
@@ -608,34 +620,45 @@ a:link{
     
     .container_dashboard{
         grid-template-columns: 1fr 50px;
-        grid-template-rows: 10vh 500px 500px ;
+        grid-template-rows: 10vh 500px 530px ; 
         grid-template-areas: 
         "header nav" 
         "main main"
         "main2 main2"   
         ;
-    
     }
     
     .item1_dashboard{
         grid-area: header;
-        background: greenyellow;
     }
     
     .item2_dashboard{
         grid-area: nav;    
-        background: grey;
     }
     
     
     .item3_dashboard{
         grid-area: main;
-        background: lightblue;
+        
     }
+    .item3_dashboard{
+        font-size: 4vw;
+    }
+    .receitas_view_despesas{
+        display: flex;    
+        justify-content: center;
+    }
+    
+    .receitas_view_despesas div{
+        margin: 10px 15px 0px ;
+        border-radius: 30px;
+        width: 130px;
+        font-size: 3vw;
+    }
+
     
     .item4_dashboard{
         grid-area: main2;
-        background: blue;
     }
     
     .container_view_conta{
