@@ -18,19 +18,11 @@
     <div class=" grid1 item container_index ">
         <div class="item1_index">
             <h2>SAVEMONEY</h2>
-            <div class="topnav" id="myTopnav">
                 <a href="#"><input class="button" type="button" value="Início"></a> 
                 <a href="#"><input class="button" type="button" value="Objetivo"></a>
                 <a href="#"><input class="button" type="button" value="Contato"></a>
                 <a href="login.html"><input  class="button" type="button" value="Acessar"></a>
-                <div class="dropdown">
-                  <button class="dropbtn">
-                    <i class="fa fa-caret-down"></i>
-                  </button>                  
-                </div>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-              </div> 
-        
+                
         </div>
             <!--<div class="dropdown">
                 <button class="dropbtn">Dropdown</button>
@@ -72,7 +64,6 @@
         <div class="item4_index">
             <h1>Developers</h1>
             <div class="container_cards">
-                <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
                 <div class="item">
                     <img src="view/img/eddie_equipe_card.jpg" width="85px" height="85px">
                     <h3>Fulanito</h3>
@@ -99,7 +90,6 @@
                     <h4>Front-End</h4>
                 </div>
                 
-                <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
         </div>
         
         <div class="item5_index">
@@ -120,35 +110,5 @@
         <div class="item5_cadastro_login ">TEST</div>
         -->
     </div>
-   <script>
-   function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-
-  }
-  
-  var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("item");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
-} 
-  </script>
-    
 </body>
 </html>

@@ -1,5 +1,6 @@
 {
     "recommendations": [
-        "bajdzis.vscode-database"
+        "bajdzis.vscode-database",
+        "randomfractalsinc.vscode-data-preview"
     ]
 }
