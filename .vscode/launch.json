@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SavemoneyApplication<savemoney>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.savemoney.savemoney.SavemoneyApplication",
+            "projectName": "savemoney",
+            "args": ""
+        }
+    ]
+}
