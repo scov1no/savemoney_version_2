@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="sortcut icon" href="view/img/LOGO_SAVEMONEY.png" width="16px" height="16px">
-    <title>SAVEMONEY - Dashboard</title>
+    <title>SAVEMONEY - Receita</title>
 
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
@@ -51,58 +51,37 @@
            
         
         <div class="item2_dashboard item">
-            <div>
-                <img src="view/img/eddie_equipe_card.jpg">
-                <h1>Seja Bem vindo, Joaquim!</h1>
-                <h2>Saldo</h2>
-                <p>R$ 10.121,53</p> 
-            </div>
-            <div class="receitas_view_despesas">
-                <div class="item2">
-                    <h2>Receitas</h2>
-                    <p>$555,00</p>
-                </div>
-                <div class="item2">
-                    <h2>Despesas</h2>
-                <p>$555,00</p>
-                </div>
-            </div>
+           
         </div>
         <div class="item3_dashboard item">
-            <h2>Últimos lançamentos</h2>
-            <div>
-                <ul>
-                    <li>
-                        <img src="view/img/pizza_icon.png"  width="37px" height="39px">
-                        <h3>Alimentação</h3>
-                        <p>R$ 120,00</p>
-                    </li>
-                    <li>
-                        <img src="view/img/car_icon.png"  width="37px" height="39px">
-                        <h3>Manutenção</h3>
-                        <p>R$ 345,99</p>
-                    </li>
-                    <li>
-                        <img src="view/img/money_icon.png"  width="37px" height="39px">
-                        <h3>Pix Juanita</h3>
-                        <p>R$ 3233,65</p>
-                    </li>
-                    <li>
-                        <img src="view/img/pizza_icon.png"  width="37px" height="39px">
-                        <h3>Alimentação</h3>
-                        <p>R$ 53,76</p>
-                    </li>
-                    <li>
-                        <img src="view/img/pizza_icon.png"  width="37px" height="39px">
-                        <h3>Alimentação</h3>
-                        <p>R$ 53,76</p>
-                    </li>
+            <h1>Adicionar</h1>
+            <form action="" method="get" class="form-example">
+                <div class="form-example">
+                  <label for="nome_receita">Nome da receita:</label>
+                  <input type="text" name="nome_receita" id="receita" required>
+                </div>
+                <div class="form-example">
+                  <label for="valor_receita">Valor:</label>
+                  <input type="number" name="valor_receita" id="valor_receita" required>
                     
-                </ul>
-                <p>ver mais</p>
-            </div>
+                </div>
+                <div class="form-example">
+                    <label for="data_receita">Data:</label>
+                  <input type="date" name="data_receita" id="data_receita" required>
+                </div>                
+                <div class="form-example">
+                    <label for="descricao_receita">Descrição:</label>
+                    <input type="text" name="descricao_receita" id="descricao_receita" required>
+                </div>
+              </form>
+              <div class="submit_inputs_receita">
+                <input type="submit" value="Adicionar">
+                <input type="submit" value="Editar">
+                <input type="submit" value="Exclur">
+                <input type="submit" value="Cancelar"> 
+              </div>
         </div>
-    </div>
+        
    
         
 
@@ -114,4 +93,3 @@
     <!--END-->
 </body>
 </html>
-
