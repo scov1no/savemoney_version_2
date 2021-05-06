@@ -5,59 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="sortcut icon" href="view/img/LOGO_SAVEMONEY.png" width="16px" height="16px">
-    <title>Receita</title>
+    <title>SAVEMONEY - Receita</title>
     <link href="view/style2.css" rel="stylesheet">
     
 </head>
 <body>
     <div class=" grid1 container_view_receita_despesa ">
-        <div class=" item1_container_view_receita_despesa">
-            <div class="item1_dashboard item">
-                <a href="#">SAVEMONEY</a>
-            </div>
-        </div>
-        <div class=" item2_container_view_receita_despesa item">
-            <div class="">         
-                <li><a link="#" class=""><img src="/app/view/img/icon1.png" width="37px" height="39px"></a></li>
-                <li><a link="#" class=""><img src="https://img.icons8.com/ios/100/000000/money-bag.png" width="39px" height="40px"></a></li>
-                <li><a link="#" class=""><img src="/app/view/img/icon3.png" width="37px" height="39px"></a></li>
-                <li><a link="#" class=""><img src="/app/view/img/icon4.png" width="37px" height="39px"></a></li>
-            </div>
-        </div>
+        <nav class="item1_dashboard  item">                
+            <a id="SAVEMONEY_title_nav" href="#">SAVEMONEY</a>
+            <a href="dashboard.html" class=""><img src="/app/view/img/icon1.png" width="37px" height="39px"></a>
+            <a href="view_receita.html" class=""><img src="https://img.icons8.com/ios/100/000000/money-bag.png" width="39px" height="40px"></a>
+            <a href="view_despesa.html" class=""><img src="/app/view/img/icon3.png" width="37px" height="39px"></a>
+            <a href="config.html" class=""><img src="/app/view/img/icon4.png" width="37px" height="39px"></a>
+    
+        </nav>
+        
+        <nav class="item2_dashboard  item">             
+            
+            <a href="#" class=""><img src="/app/view/img/icon1.png" width="37px" height="39px"></a>
+            <a href="view_receita.html" class=""><img src="https://img.icons8.com/ios/100/000000/money-bag.png" width="39px" height="40px"></a>
+            <a href="view_despesa.html" class=""><img src="/app/view/img/icon3.png" width="37px" height="39px"></a>
+            <a href="config.html" class=""><img src="/app/view/img/icon4.png" width="37px" height="39px"></a>
+    
+        </nav>
         <div class=" item3_container_view_receita_despesa item">
-            <h1>Receitas</h1>
-            <div>
-                <ul>
-                    <li>
-                        <img src="view/img/pizza_icon.png"  width="37px" height="39px">
-                        <h3>Alimentação</h3>
-                        <p>R$ 120,00</p>
-                    </li>
-                    <li>
-                        <img src="view/img/car_icon.png"  width="37px" height="39px">
-                        <h3>Manutenção</h3>
-                        <p>R$ 345,99</p>
-                    </li>
-                    <li>
-                        <img src="view/img/money_icon.png"  width="37px" height="39px">
-                        <h3>Pix Juanita</h3>
-                        <p>R$ 3233,65</p>
-                    </li>
-                    <li>
-                        <img src="view/img/pizza_icon.png"  width="37px" height="39px">
-                        <h3>Alimentação</h3>
-                        <p>R$ 53,76</p>
-                    </li>
-                    <li>
-                        <img src="view/img/pizza_icon.png"  width="37px" height="39px">
-                        <h3>Alimentação</h3>
-                        <p>R$ 53,76</p>
-                    </li>
-                    
-                </ul>
+            <h1 class="item_receita">Receitas</h1>
+            <div><!--TESTAR -->
+                <table class="rwd-table">
+                    <tr>
+                        <th>Nome Receita</th>
+                        <th>Valor</th>
+                        <th>Data</th>
+                        <th>Descrição</th>
+                    </tr>
+                    <tr>
+                        <td data-th="Movie Title">Star Wars</td>
+                        <td data-th="Genre">Adventure, Sci-fi</td>
+                        <td data-th="Year">1977</td>
+                        <td data-th="Gross">$460,935,665</td>
+                    </tr>
+                    <tr>
+                        <td data-th="Movie Title">Howard The Duck</td>
+                        <td data-th="Genre">"Comedy"</td>
+                        <td data-th="Year">1986</td>
+                        <td data-th="Gross">$16,295,774</td>
+                    </tr>
+                    <tr>
+                        <td data-th="Movie Title">American Graffiti</td>
+                        <td data-th="Genre">Comedy, Drama</td>
+                        <td data-th="Year">1973</td>
+                        <td data-th="Gross">$115,000,000</td>
+                    </tr>
+                </table>
             </div>
         </div>
-        <div class=" item4_container_view_receita_despesa item">
+        <div class=" item4_container_view_receita_despesa item_receita">
             <h1>Adicionar</h1>
             <form action="" method="get" class="form-example">
                 <div class="form-example">
@@ -78,9 +80,11 @@
                     <input type="text" name="descricao_receita" id="descricao_receita" required>
                 </div>
               </form>
-              <div class="submit_inputs">
-                  <input type="submit" value="Adiconar">
-                  <input type="submit" value="Exclur"> 
+              <div class="submit_inputs_receita">
+                <input type="submit" value="Adicionar">
+                <input type="submit" value="Editar">
+                <input type="submit" value="Exclur">
+                <input type="submit" value="Cancelar"> 
               </div>
         </div>
     </div>    
