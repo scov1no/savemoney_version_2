@@ -450,51 +450,18 @@ a:link{
         margin-right: 7px;
 }
 
-
-.table_pre_view{
-    width: 80%; /*Ajustar isso depois*/ 
-    margin: 12px;
-    text-align: center;
-    text-align: center;
-    overflow:hidden;
-    border-collapse:separate;    
-    border: none;
-    border-spacing: 0 7px;
+.div_pre_view{
+    margin: 10px;
 }
 
+.ul_view_first{
+    display: flex;
+    justify-content: space-around;
 
-.table_pre_view tr {
-}
-.table_pre_view th{
-    color: white;
-    background-color: rgb(46, 163, 42);
-    font-weight: normal;
-    text-align: center;
-    padding: 5px;
-    font-size: 12px;  
-      
 }
 
-.table_pre_view td{
-    color: #aaa;
-    background-color: white;
-    padding: 5px;
-    border: none;
-    overflow:hidden;
-    border-collapse:separate;    
-    border: none;
-    border-spacing: 0 15px;
+.ul_view_second{
 }
-
-.Info_tabela{
-}
-
-.Aparece_info{
-    display: none;
-}
-
-
-
 
 /*Container Tablets*/
 

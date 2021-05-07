@@ -50,41 +50,25 @@
           </nav>
            
         <!--Apenas visual, mudar para auto com DB-->
-        <div class="item2_dashboard item ">
-           <table class="table_pre_view">
-              <!--<thead>
-                <tr>
-                  <th scope="col">Nome</th>
-                  <th scope="col">Valor</th>
-                  <th scope="col">Data</th>
-                  <th scope="col">Descrição</th>
-                </tr>
-              </thead>-->
-              <tbody>
-                <div>
-                  <tr class="Info_tabela">
-                    <th>Pix</th>
-                    <td>R$30,00</td>                                      
-                  </tr>
-                  <tr class="Aparece_info">
-                    <td >11/12/2021</td>
-                    <td >Niver do Fulaninho</td>
-                  </tr>
-                </div> 
-                <tr>
-                  <th>Depósito</th>
-                  <td>R$30,00</td>
-                  <td>11/12/2021</td>
-                  <td>Niver do Fulaninho</td>
-                </tr>
-                <tr>
-                  <th>Boleto</th>
-                  <td>R$30,00</td>
-                  <td>11/12/2021</td>
-                  <td>Niver do Fulaninho</td>
-                </tr>
-              </tbody>
-            </table>
+        <div class="item2_dashboard item " >
+          <div class="div_pre_view">
+            <ol class="item2" >
+              <li>Pix</li> <!--Colocar display flex, uma na frente da outra-->
+              <li>Roberta</li>
+              <button class="VIEW">Click me</button>
+              
+              <ul >
+                <li>$3000</li>
+                <li>Niver</li>
+                <button class="ESC">Click me</button>
+              </ul>
+              
+            </ol>
+            
+            
+          </div>
+           
+           
         </div>
         <div class="item3_dashboard item">
             <h1>Adicionar</h1>
@@ -123,6 +107,29 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+        <!--Fazendo test por aqui -->
+        <script> 
+        $(document).ready(function(){
+          
+          $("ol").click(function(){
+              $("ul").hide();
+            });
+          
+          $("ol").click(function(){
+              $("ul").show();
+            });  
+          
+          
+         
+            
+
+        });
+
+        
+        
+        
+    </script> 
+   
     <!--END-->
 </body>
 </html>
