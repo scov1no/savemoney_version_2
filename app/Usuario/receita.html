@@ -50,26 +50,29 @@
           </nav>
            
         <!--Apenas visual, mudar para auto com DB-->
-        <div class="item2_dashboard item " >
-          <div class="div_pre_view">
-            <ol class="item2" >
-              <li>Pix</li> <!--Colocar display flex, uma na frente da outra-->
-              <li>Roberta</li>
-              <button class="VIEW">Click me</button>
-              
-              <ul >
-                <li>$3000</li>
-                <li>Niver</li>
-                <button class="ESC">Click me</button>
-              </ul>
-              
-            </ol>
-            
-            
+        <div class="item2_dashboard item ">
+          <div> 
+          <ul class="ul_view_first item2"">
+            <li>Pix</li>
+            <li>Vanessa</li>            
+          </ul>
+          <ul class=" view_none ul_view_second item2">    
+                <li>11/12/16</li>
+                <li>Descrição</liid=>
+            </ul>
+          </div> 
+        
+        <div> 
+          <ul class="ul_view_first item2"">
+            <li>Pix</li>
+            <li>Vanessa</li>            
+          </ul>
+          <ul class=" view_none ul_view_second item2">    
+                <li>11/12/16</li>
+                <li>Descrição</liid=>
+            </ul>
           </div>
-           
-           
-        </div>
+         </div> 
         <div class="item3_dashboard item">
             <h1>Adicionar</h1>
             <form action="" method="get" class="form-example">
@@ -110,26 +113,22 @@
         <!--Fazendo test por aqui -->
         <script> 
         $(document).ready(function(){
-          
-          $("ol").click(function(){
-              $("ul").hide();
-            });
-          
+          $("ul").click(function(){
+            $(".view_none").toggle();
+          });
+        });
+        /*   
+        $(document).ready(function(){ 
           $("ol").click(function(){
               $("ul").show();
             });  
-          
-          
-         
-            
-
-        });
-
+        }
+        */
         
         
         
     </script> 
    
-    <!--END-->
+    
 </body>
 </html>

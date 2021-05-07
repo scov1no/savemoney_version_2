@@ -457,11 +457,17 @@ a:link{
 .ul_view_first{
     display: flex;
     justify-content: space-around;
+    margin: 10px 10px 0px ;
+    flex-wrap: wrap;
 
 }
 
 .ul_view_second{
+    display: none;
+    margin: 0px 10px 0px;
 }
+
+
 
 /*Container Tablets*/
 
