@@ -179,12 +179,19 @@ a:link{
     padding-right: 40px;
 }
 
+.container_cadastro_login{
+    grid-template-columns: 1fr 1fr;
+        grid-template-rows: 15vh 85vh ;
+        grid-template-areas: 
+        "header header" 
+        "main_1 main_2"
+        ;
 
+}
 
 .item1_cadastro_login{
     grid-area: header;
-    margin: 20px 30px 0px 30px;
-    padding: 10px;
+    padding-left: 30px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -192,20 +199,40 @@ a:link{
     font-size: 1.6vw;   
 }
 
-
+.item1_cadastro_login input{
+    margin: 40px;
+    width: 100px;
+    height: 30px; 
+    background: linear-gradient(46.19deg, #56AB2F 5.66%, #A8E063 94.35%);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border: none;
+    border-radius: 60px;
+    color: white;
+}
 
 .item2_cadastro_login{
     grid-area: main_1;
+    margin: 50px;
+}
+.item2_cadastro_login img{
+    width: 600px;
+    height: 400px;
+}
+
+
+
+.item3_cadastro_login{
+    grid-area: main_2;
     display: flex;
     align-items: center;
-    margin: 100px;
+    margin: 50px;
     
 }
-.item2_cadastro_login  form{
+.item3_cadastro_login  form{
     margin-left: 100px;
 }
 
-.item2_cadastro_login input{
+.item3_cadastro_login input{
     align-items: center;
     justify-content: space-around;
     border: solid white 2px;
@@ -219,12 +246,6 @@ a:link{
     border-radius: 20px;
 
     
-}
-
-
-.item2_cadastro_login img{
-    width: 600px;
-    height: 400px;
 }
 
 
