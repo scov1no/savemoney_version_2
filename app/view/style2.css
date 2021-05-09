@@ -269,23 +269,30 @@ a:link{
     justify-content: space-around;
     font-size: 20px;
     padding: 20px;
+    
 
+}
+.item1_dashboard li{
+    padding-left: 20px;
+    align-items: center;
 }
 
 
 .item2_dashboard {
     grid-area: main;
     text-align: center;
+    padding: 10px;
 }
 
 
 
-.item2_dashboard h2{
-    font-size: 40px;
+.item2_dashboard h1{
+    font-size: 30px;
+    padding: 5%;
 }
 
 .item2_dashboard p{
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .item2_dashboard img{
@@ -304,27 +311,31 @@ a:link{
 .item3_dashboard{
     grid-area: main2;
     text-align: center;
-
-}
-.item3_dashboard ul{
-    margin: 0px;
-    padding: 0px;
+    padding: 10px;
 }
 
-.item3_dashboard li{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border: solid white 2px;
-    background: white;
-    border-radius: 30px;
+
+
+.container_view_geral{
+    grid-template-columns: 1fr ;
+    grid-template-rows: 10vh 90vh ;
+    grid-template-areas: 
+    "header" 
+    "main"  
+    ;
+    gap:15px;
     margin: 20px;
-    color: black;
-    box-shadow: 1px 7px 12px rgba(0, 0, 0, 0.297), 1px 3px 3px rgba(0,0,0,0.23);
 }
 
+.item1_view_geral{
+    grid-area: header;
+}
 
-
+.item2_view_geral{
+    grid-area:main;
+    padding: 20px;
+    text-align: center;
+}
 
 
 /*Container Tablets*/
@@ -759,6 +770,7 @@ table th{
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     color: white;
     border-radius: 10px;
+    width: 100px;
     
 }
 .item_receita{
@@ -856,16 +868,6 @@ hr{
         margin-right: 7px;
 }
 
-.receitas_view_despesas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
-
-.receitas_view_despesas h2, p{
-    font-size: 14px;
-}
 
 /*
 .div_pre_view{
