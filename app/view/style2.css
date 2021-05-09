@@ -91,7 +91,7 @@ a:link{
 
 .container_index{
     grid-template-columns: 1fr;
-    grid-template-rows: 40px 200px repeat(3, 300px) ; /*Trocar por vh*/
+    grid-template-rows: 40px 190px 200px 400px 200px 30px ; /*Trocar por vh*/
     grid-template-areas: 
     "header" 
     "main_1"
@@ -100,7 +100,6 @@ a:link{
     "main_3"
     "footer"
     ;
-
 }
 /*
 @media only screen and (min-width:600px){
@@ -146,29 +145,17 @@ hr{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 10px ;
+    margin: 10px;
    
 }
 
 .item1-5_index img{
-    padding: 25px;
+    padding: 5px;
 }
 
 
 
-
-@media only screen and (max-width:690px){    
-    .item1_index input{
-        width: 100%;
-        height: 30px;
-        background: rgb(117, 181, 49);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-        border: none;
-        border-radius: 60px;
-        color: white;
-        font-size: 2.0vw;
-    }
-        
-}    
 .item2_index{
     grid-area: main_1;
     margin-top: 80px;
@@ -247,6 +234,7 @@ hr{
     align-items: center;
     padding: 20px;
     color: black;
+    width:100%;
 }
 
 .item5_index ul{
@@ -258,31 +246,6 @@ hr{
 }
 
 
-.container_cards{
-    justify-content: center;    
-    display: grid;
-    grid-template-columns: repeat(5, 140px) ;
-    grid-template-rows: 220px;
-    column-gap: 40px;
-    padding: 30px;
-    color:black;
-}
-.container_cards h3, h4{
-    align-content: end;    
-}
-
-.container_cards img{
-    border-radius: 7px;
-    margin-top: 10px;
-}
-.container_cadastro_login{
-    grid-template-columns: 1fr;
-    grid-template-rows: 15vh 70vh ;
-    grid-template-areas: 
-    "header" 
-    "main_1"
-    ;
-}
 
 .item1_cadastro_login{
     grid-area: header;
@@ -897,11 +860,15 @@ table th{
 
 
 .card-group{
-    margin: 10px;
-
+    margin: 30px;
+    padding: 30px;
 }
 .card{
     text-align: center;
     margin:30px;
     border-radius: 40px;
+}
+
+.card-deck{
+    display: flex;
 }
