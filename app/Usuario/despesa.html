@@ -15,56 +15,70 @@
 </head>
 <body>
     <div class=" grid1  container_dashboard ">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light item1_dashboard item">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">SAVEMONEY</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="dashboard.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="view_receita.html">Receitas</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="view_despesa.html">Despesa</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="config.html">Configurações</a>
-                  </li>
-                  
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Sair</a>
-                  </li>
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </nav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light item1_dashboard item">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">SAVEMONEY</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="dashboard.html">Home</a> <!--Na dúvida se retiro-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/app/Usuario/receita.html">Receita</a>
+              </li>                  
+              <li class="nav-item">
+                <a class="nav-link" href="/app/Usuario/despesa.html">Despesa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/app/Config/config.html">Configurações</a>
+              </li>
+              
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled " href="#" tabindex="-1" aria-disabled="true"><input class="item_input" type="submit" value="Sair"></a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
            
         
         <div class="item2_dashboard item">
-          <table class="table-round-corner">
-            <h1>Últimos lançamentos</h1>
-            <tr>
-              <th>Tipo</th>
-              <th>Perfil</th>
-            </tr>                
-            <tr class="view_first">
-              <td>Pix</td>
-              <td>Vanessa</td>        
-            </tr>
-            <tr class="view_none">
-              <td>$1000,00</td>
-              <td>11-11-2021</td>                  
-            </tr>               
+          <table class="table">
+            <thead>
+              <h1>Lançamentos</h1>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>               
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Pizza</td>
+                <td>Cartão</td>
+                
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Uber</td>
+                <td>Dinheiro</td>
+                
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Boleto</td>
+                <td>Compra do xbox</td>
+                
+              </tr>
+            </tbody>
+            
+            
           </table>
         </div>
         <div class="item3_dashboard item">
@@ -92,7 +106,8 @@
                   <input type="submit" value="Adicionar">
                   <input type="submit" value="Editar">
                   <input type="submit" value="Exclur">
-                  <input type="submit" value="Cancelar"> 
+                  <input type="submit" value="Cancelar">
+                  <a href="view_geral_despesa.html"><input type="submit" value="View"></a> 
               </div>
         </div>
         
