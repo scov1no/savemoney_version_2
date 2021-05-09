@@ -50,37 +50,24 @@
           </nav>
            
         <!--Apenas visual, mudar para auto com DB-->
-        <div class="item2_dashboard item">
-           <table class="table">
-              <thead>
+        <div class="item2_dashboard item ">          
+              <table class="table-round-corner">
+                <h1>Últimos lançamentos</h1>
                 <tr>
-                  <th scope="col">Nome</th>
-                  <th scope="col">Valor</th>
-                  <th scope="col">Data</th>
-                  <th scope="col">Descrição</th>
+                  <th>Tipo</th>
+                  <th>Perfil</th>
+                </tr>                
+                <tr class="view_first">
+                  <td>Pix</td>
+                  <td>Vanessa</td>        
                 </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Pix</th>
-                  <td>R$30,00</td>
-                  <td>11/12/2021</td>
-                  <td>Niver do Fulaninho</td>
-                </tr>
-                <tr>
-                  <th scope="row">Depósito</th>
-                  <td>R$30,00</td>
-                  <td>11/12/2021</td>
-                  <td>Niver do Fulaninho</td>
-                </tr>
-                <tr>
-                  <th scope="row">Boleto</th>
-                  <td>R$30,00</td>
-                  <td>11/12/2021</td>
-                  <td>Niver do Fulaninho</td>
-                </tr>
-              </tbody>
-            </table>
+                <tr class="view_none">
+                  <td>$1000,00</td>
+                  <td>11-11-2021</td>                  
+                </tr>               
+              </table>
+           
+        
         </div>
         <div class="item3_dashboard item">
             <h1>Adicionar</h1>
@@ -119,6 +106,31 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
-    <!--END-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>   
+    
+    <!--Fazendo test por aqui -->
+        <script>
+          
+          $(document).ready(function(){
+            $(".view_first").click(function(){
+              $(".view_none").slideDown(600);              
+            });
+            $(".view_first").click(function(){
+              $(".view_none").hide();
+            });
+          });
+          /*Não apagar ainda*/
+        /* 
+        $(document).ready(function(){
+          $("ul").click(function(){
+            $(".view_none").toggle();
+          });
+        });
+        */
+        
+        
+    </script> 
+   
+    
 </body>
 </html>
