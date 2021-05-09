@@ -848,8 +848,17 @@ a:link{
 
 
 }
+table{
+    color: black ;
+}
 
 
+
+
+.hiddenRow {
+    padding: 0 !important;
+}
+/*
 .table-round-corner {
     margin: auto;
     
@@ -879,3 +888,4 @@ table th{
     padding: 5px;
     font-size: 12px;
 }
+*/
