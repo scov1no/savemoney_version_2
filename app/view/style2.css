@@ -8,8 +8,6 @@ html, body{
     padding: 0;
     margin: 0;
     background: linear-gradient(46.19deg, #E9E4F0 5.66%, #D3CCE3 94.35%);
-    
-    
 }
 
 p{
@@ -33,56 +31,6 @@ a:link{
     
 }
 
-
-
-.item{
-    background-image: linear-gradient(130deg, #dfdede 0%, #f1f7f1 85%, #d2d3d1 100%);
-    box-shadow: 0 30px 60px rgba(1,1,0,0.19), 0 10px 20px rgba(0,0,0,0.23);
-    color: rgb(74, 72, 72);
-    border-radius: 5px;
-}
-.item_none{
-    background: none;
-    box-shadow: none;
-    
-    border-radius: none;
-}
-.item2{
-    background: white;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    color: black;
-    border-radius: 5px;
-    margin: 10px;
-}
-.item3{
-    background: white;
-    color: black;
-    border-radius: 5px;
-}
-
-.item_input{
-    background: linear-gradient(46.19deg, #56AB2F 5.66%, #A8E063 94.35%);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    color: white;
-    border-radius: 10px;
-    
-}
-.item_receita{
-    color: rgb(58, 194, 58);
-}
-
-.item_despesa{
-    color: rgb(203, 51, 51);
-
-}
-.wrap {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-
 /*Grid*/
 
 .grid1{
@@ -101,21 +49,6 @@ a:link{
     "footer"
     ;
 }
-/*
-@media only screen and (min-width:600px){
-    .nav_view{
-        display: inline;
-    }
-}
-
-
-*/
-
-hr{
-    margin: 7%;
-    border: none;
-    background: none;
-}
 
 
 
@@ -125,19 +58,19 @@ hr{
 
 }
 
-    .item1_index a{
-        
-        padding-left: 60px;
-    }
+.item1_index a{
+
+    padding-left: 60px;
+}
 
 .item1_index input{
     border-radius: 10px;
     border: none;
+    width: 100px;
     background: linear-gradient(46.19deg, #56AB2F 5.66%, #A8E063 94.35%);
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     color: white;
 }
-
 
 
 .item1-5_index{
@@ -145,8 +78,8 @@ hr{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 10px ;
-    margin: 10px;
+    
+    margin: 5px;
    
 }
 
@@ -184,9 +117,10 @@ hr{
     padding-left: 10px;
 }
 .item2_index input{
+    margin: 40px;
     width: 150px;
     height: 30px; 
-    background: rgb(117, 181, 49);
+    background: linear-gradient(46.19deg, #56AB2F 5.66%, #A8E063 94.35%);
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     border: none;
     border-radius: 60px;
@@ -196,27 +130,18 @@ hr{
 
 .item3_index{
     grid-area: main_2;   
-    margin: 10% 0%  0%;
-       
-    font-size: 20px;
-}
-
-.item3_index h2{
-    font-size: 3.9vh;
-}
-
-.item3_index div{
-    margin-top: 30px;
+    margin: 80px;
 }
 
 .item3_index h2{
     text-align: center;
+    font-size: 40px;
 }
 
+
 .item3_index p{
-    
-    margin: 30px;
-    font-size: 2vw;
+    padding: 50px;
+    font-size: 1.7vw;
     
 }
 
@@ -224,17 +149,26 @@ hr{
 .item4_index{
     grid-area: main_3;
     text-align: center;
-    margin: 2% 0% 0%;
+    margin: 10px;
+    padding: 10px;
+    
+}
+.item4_index img{
+    height: 200px;
+
+}
+
+.item4_index h1{
+    margin: 20px;
 }
 .item5_index{
     grid-area: footer;
-    background: white;
+    background: linear-gradient(46.19deg, #56AB2F 5.66%, #A8E063 94.35%);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     color: black;
-    width:100%;
 }
 
 .item5_index ul{
@@ -288,31 +222,6 @@ hr{
 }
 
 
-.button_get{  
-    margin: 30px 0px 20px;
-
-
-}
-.button_get input{
-    margin-bottom: 20px;
-    background: #43e52e;
-    color: white;
-    font-size: 1.3vw ;
-}
-.button_get2{  
-    margin-top: 20px;
-
-}
-
-.button_get2 input{
-    background: #43e52e;
-    color: white;
-    font-size: 1.3vw ;
-}
-
-.button.get input{
-    padding-left: 30px;
-}
 .item2_cadastro_login img{
     width: 600px;
     height: 400px;
@@ -396,81 +305,6 @@ hr{
 
 
 
-.form-example{
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-}
-
-.form-example label{
-    display: flex;
-    justify-content: start;
-    padding-left: 10px;
-}
-
-.form-example input{
-    border-radius: 30px;
-    
-}
-
-
-
-.submit_inputs_receita input{
-    margin-top: 20px;
-    height: 40px;
-    background: rgb(117, 181, 49);
-    border-radius: 30px;
-    border: none;    
-    color: white;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    width: 120px;
-        margin-right: 7px;
-}
-
-.submit_inputs_despesa input{
-    margin-top: 20px;
-    height: 40px;
-    background: rgb(203, 51, 51);
-    border-radius: 30px;
-    border: none;    
-    color: white;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    width: 120px;
-        margin-right: 7px;
-}
-
-.receitas_view_despesas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
-
-.receitas_view_despesas h2, p{
-    font-size: 14px;
-}
-
-/*
-.div_pre_view{
-    margin: 10px;
-}
-
-.ul_view_first{
-    display: flex;
-    justify-content: space-around;
-    margin: 10px 10px 0px ;
-    flex-wrap: wrap;
-
-}
-
-.ul_view_second{
-    display: none;
-    margin: 0px 10px 0px;
-}
-*/
-.view_none{
-    display: none;
-}
 
 /*Container Tablets*/
 
@@ -861,7 +695,7 @@ table th{
 
 .card-group{
     margin: 30px;
-    padding: 30px;
+    padding: 15px;
 }
 .card{
     text-align: center;
@@ -871,4 +705,165 @@ table th{
 
 .card-deck{
     display: flex;
+}
+
+
+.item{
+    background-image: linear-gradient(130deg, #dfdede 0%, #f1f7f1 85%, #d2d3d1 100%);
+    box-shadow: 0 30px 60px rgba(1,1,0,0.19), 0 10px 20px rgba(0,0,0,0.23);
+    color: rgb(74, 72, 72);
+    border-radius: 5px;
+}
+.item_none{
+    background: none;
+    box-shadow: none;
+    
+    border-radius: none;
+}
+.item2{
+    background: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    color: black;
+    border-radius: 5px;
+    margin: 10px;
+}
+.item3{
+    background: white;
+    color: black;
+    border-radius: 5px;
+}
+
+.item_input{
+    background: linear-gradient(46.19deg, #56AB2F 5.66%, #A8E063 94.35%);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    color: white;
+    border-radius: 10px;
+    
+}
+.item_receita{
+    color: rgb(58, 194, 58);
+}
+
+.item_despesa{
+    color: rgb(203, 51, 51);
+
+}
+.wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+  
+hr{
+    margin: 7%;
+    border: none;
+    background: none;
+}
+
+
+.button_get{  
+    margin: 30px 0px 20px;
+
+
+}
+.button_get input{
+    margin-bottom: 20px;
+    background: #43e52e;
+    color: white;
+    font-size: 1.3vw ;
+}
+.button_get2{  
+    margin-top: 20px;
+
+}
+
+.button_get2 input{
+    background: #43e52e;
+    color: white;
+    font-size: 1.3vw ;
+}
+
+.button.get input{
+    padding-left: 30px;
+}
+
+
+.form-example{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.form-example label{
+    display: flex;
+    justify-content: start;
+    padding-left: 10px;
+}
+
+.form-example input{
+    border-radius: 30px;
+    
+}
+
+
+
+
+.submit_inputs_receita input{
+    margin-top: 20px;
+    height: 40px;
+    background: rgb(117, 181, 49);
+    border-radius: 30px;
+    border: none;    
+    color: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    width: 120px;
+        margin-right: 7px;
+}
+
+.submit_inputs_despesa input{
+    margin-top: 20px;
+    height: 40px;
+    background: rgb(203, 51, 51);
+    border-radius: 30px;
+    border: none;    
+    color: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    width: 120px;
+        margin-right: 7px;
+}
+
+.receitas_view_despesas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.receitas_view_despesas h2, p{
+    font-size: 14px;
+}
+
+/*
+.div_pre_view{
+    margin: 10px;
+}
+
+.ul_view_first{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 10px 0px ;
+    flex-wrap: wrap;
+
+}
+
+.ul_view_second{
+    display: none;
+    margin: 0px 10px 0px;
+}
+*/
+.view_none{
+    display: none;
 }
