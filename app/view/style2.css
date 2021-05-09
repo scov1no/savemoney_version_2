@@ -47,8 +47,21 @@ a:link{
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     color: black;
     border-radius: 5px;
+    margin: 10px;
+}
+.item3{
+    background: white;
+    color: black;
+    border-radius: 5px;
 }
 
+.item_input{
+    background: rgb(58, 194, 58);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    color: white;
+    border-radius: 10px;
+    
+}
 .item_receita{
     color: rgb(58, 194, 58);
 }
@@ -80,8 +93,8 @@ a:link{
 }
 
 .container_index{
-    grid-template-columns: 100%;
-    grid-template-rows: 60px 300px 230px 300px  40px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 300px 230px 300px  40px; /*Trocar por vh*/
     grid-template-areas: 
     "header" 
     "main_1"
@@ -339,8 +352,8 @@ a:link{
 
 
 .container_dashboard{
-    grid-template-columns: 50% 50% ;
-    grid-template-rows: 10% 90% ;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 10vh 90vh ;
     grid-template-areas: 
     "header header" 
     "main main2"  
@@ -367,6 +380,7 @@ a:link{
 }
 
 
+
 .item2_dashboard h2{
     font-size: 40px;
 }
@@ -381,7 +395,13 @@ a:link{
     width: 150px;
     height: 150px;
 }
+.item2_dashboard table{
+    margin: 20px;
+}
 
+.item2_dashboard h1{
+    text-align: center;    
+}
 .item3_dashboard{
     grid-area: main2;
     text-align: center;
@@ -450,6 +470,18 @@ a:link{
         margin-right: 7px;
 }
 
+.receitas_view_despesas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.receitas_view_despesas h2, p{
+    font-size: 14px;
+}
+
+/*
 .div_pre_view{
     margin: 10px;
 }
@@ -466,15 +498,17 @@ a:link{
     display: none;
     margin: 0px 10px 0px;
 }
-
-
+*/
+.view_none{
+    display: none;
+}
 
 /*Container Tablets*/
 
 @media only screen and (max-width:768px) {
     .container_index{
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 60px 300px 300px 300px  40px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10vh 60vh 300px 300px  40px;
         grid-template-areas: 
         "header header" 
         "main_1 main_1"
@@ -814,17 +848,18 @@ a:link{
 
 }
 
-/*
+
 .table-round-corner {
-    margin-top: 15px;
-    width: 100%;
+    margin: auto;
+    
+    width: 80%;
     text-align: center;
     overflow:hidden;
     border-collapse:separate;
     border: solid #ccc 1px;
     -webkit-border-radius: 25px;
        -moz-border-radius: 25px;
-            border-radius: 25px;
+            border-radius: 20px;
 }
 
 
@@ -837,10 +872,9 @@ table td {
 
 table th{
     color: white;
-    background-color: red;
+    background-color: green;
     font-weight: normal;
     text-align: center;
     padding: 5px;
     font-size: 12px;
 }
-*/
