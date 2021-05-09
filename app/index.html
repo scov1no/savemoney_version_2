@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="sortcut icon" href="view/img/LOGO_SAVEMONEY.png" width="16px" height="16px">
     <title>SaveMoney</title>  
-
-    <link rel="stylesheet" href="view/style2.css">   
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link href="/app/view/style2.css" rel="stylesheet"> 
    
     
     
@@ -17,16 +18,61 @@
     
     <div class=" grid1 item container_index ">
         <div class="item1_index">
-            <h2>SAVEMONEY</h2>
-                <a href="#"><input  class="nav_bar_item" type="button" value="Início"></a> 
-                <a href="#"><input  class="nav_bar_item" type="button" value="Objetivo"></a>
-                <a href="#"><input  class="nav_bar_item" type="button" value="Contato"></a>
-                <a href="login.html"><input class="nav_bar_item"  type="button" value="Acessar"></a>
+            <nav class="navbar navbar-expand-lg navbar-success">
+                <a  class="navbar-brand" href="index.html"><img src="view/img/logo_save_money.svg" width="120px" height="120px"></a> 
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="navbar-link" href="#inicio">Inicio</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-link" href="#objetivo">Objetivo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-link" href="#developers">Developers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-link" href="#contato">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-link" href="/app/Acesso/login.html">Acesso</a>
+                      </li>
+                  </ul>
+                </div>
+              </nav>
+            <!--<nav class="navbar">
+                <a  class="navbar-brand" href="index.html"><img src="view/img/logo_save_money.svg" width="120px" height="120px"></a> 
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>           
+               <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="navbar-link" href="#inicio"><input  class="btn"  value="Início"></a> 
+                  </li>
+                  <li class="nav-item">
+                    <a class="navbar-link" href="#objetivo"><input  class="btn"  value="Objetivo"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="navbar-link" href="#developers"><input class="btn" value="Developers"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="navbar-link" href="#contato"><input  class="btn" value="Contato"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="navbar-link" href="/app/Acesso/login.html"><input class="btn"  value="Acessar"></a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
                 
         </div>
-           
+    -->
         <div class="item2_index">
-            <h1>O LOCAL CERTO PARA GUARDA DINHEIRO</h1>
+            <h1 id="inicio">O LOCAL CERTO PARA GUARDA DINHEIRO</h1>
             <h2>“Segurança, Acessibilidade, Confiança”</h2>
             <ul class="wrap'">            
                 <li><a href="cadastro.html"><input type="button" class="button" value="CADASTRO"></a></li>
@@ -60,7 +106,7 @@
         </div>
 
         <div class="item3_index">
-            <h2> Nosso Objetivo</h2>              
+            <h2 id="objetivo"> Nosso Objetivo</h2>              
                     <p>
                         "Nós desenvolvemos essa aplicação, para os nossos clientes buscarem
                         uma nova forma estar guardando o seu dinheiro e focar nos seus objetivos.
@@ -72,7 +118,7 @@
 
         </div>
         <div class="item4_index">
-            <h1>Developers</h1>
+            <h1 id="developers">Developers</h1>
             <div class="container_cards">
                 <div class="item">
                     <img src="view/img/eddie_equipe_card.jpg" width="85px" height="85px">
@@ -102,7 +148,7 @@
                 
         </div>
         
-        <div class="item5_index">
+        <div class="item5_index" id="contato">
             <a link="#"><img src="/app/view/img/savemoney.png" width="100px" height="45px"></a>
             <ul>
                 <li><img src="https://img.icons8.com/color/48/000000/instagram-new--v2.png"/></li>
@@ -120,5 +166,13 @@
         <div class="item5_cadastro_login ">TEST</div>
         -->
     </div>
+
+
+    <!--JQUERY + BOOTSTRAP-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>   
+    
 </body>
 </html>

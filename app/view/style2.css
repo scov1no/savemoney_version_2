@@ -80,8 +80,8 @@ a:link{
 .nav_bar_item{
     background:rgb(117, 181, 49);
     border-radius: 30px ;
-    height: 26px;
-    width: 80px;
+    height: 40px;
+    width: 100px;
     color: #d2d3d1;
 }
  
@@ -94,7 +94,7 @@ a:link{
 
 .container_index{
     grid-template-columns: 1fr;
-    grid-template-rows: 60px 300px 230px 300px  40px; /*Trocar por vh*/
+    grid-template-rows: 10vh 70vh 40vh 60vh 30vh 10vh; /*Trocar por vh*/
     grid-template-areas: 
     "header" 
     "main_1"
@@ -103,8 +103,6 @@ a:link{
     "main_3"
     "footer"
     ;
-    background: linear-gradient(46.19deg, #56AB2F 5.66%, #A8E063 94.35%);;
-    color:white;
 
 }
 /*
@@ -119,23 +117,13 @@ a:link{
 
 
 .item1_index{
-    grid-area: header;
-    display: flex;
-    flex-wrap: wrap;     
-    justify-content: space-evenly;   
-    align-items: center;
-    padding: 0px 7px 0px;
+    grid-area: header;  
+    padding: 0px 10px 0px;
     }
 
-.item1_index ul{
-    display: flex;
-    padding-top: 10px;
-    display: flex;
-}
 
-.item1_index li{    
-    margin-right:10px;
-}
+
+
 
 .item1-5_index{
     grid-area: main_1-5;
