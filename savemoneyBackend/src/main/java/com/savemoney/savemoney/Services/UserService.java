@@ -2,7 +2,7 @@ package com.savemoney.savemoney.Services;
 
 import java.util.List;
 
-import com.savemoney.savemoney.Entities.User;
+import com.savemoney.savemoney.model.User;
 import com.savemoney.savemoney.Repositories.UserRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;

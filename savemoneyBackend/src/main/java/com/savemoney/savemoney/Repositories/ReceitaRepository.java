@@ -1,6 +1,6 @@
 package com.savemoney.savemoney.Repositories;
 
-import com.savemoney.savemoney.Entities.Receita;
+import com.savemoney.savemoney.model.Receita;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
