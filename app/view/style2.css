@@ -664,6 +664,7 @@ a:link{
         grid-template-areas: 
         "header" 
         "main_1"
+        "item1-5_index"
         "main_2"
         "main_3"
         "footer"
@@ -681,12 +682,24 @@ a:link{
         font-size: 3vw;
 
     }
-    
-    
-    
-    
+
     .item2_index{
         grid-area: main_1;
+    }
+
+    .item2_index input{
+        margin: 10px;
+        width: 80px;
+        height: 30px;
+        background: linear-gradient(46.19deg, #56AB2F 5.66%, #A8E063 94.35%);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        border: none;
+        border-radius: 60px;
+        color: white;
+        font-size: 3.2vw;
+    }
+    .item2_index h1, h2{
+        font-size: 27px;
     }
     .item3_index{
         grid-area: main_2;     
@@ -694,7 +707,16 @@ a:link{
 
         
     }
-
+    .item1-5_index{
+        grid-area: main_1-5;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 5px;
+    }
+    .item1-5_index div{
+        justify-content: center;
+    }
     .item3_index p{
         text-align: justify;
         word-wrap: break-word;
