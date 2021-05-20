@@ -23,10 +23,7 @@ public class UserResource {
 
     private ResponseEntity<User> responseEntity;
 
-    @GetMapping("/api/listarvalores")
-    public List<User> listar(){
-        return UserRepository.findAll();
-    }
+
 
 
 }
