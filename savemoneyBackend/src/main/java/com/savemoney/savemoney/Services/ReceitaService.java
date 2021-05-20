@@ -2,7 +2,7 @@ package com.savemoney.savemoney.Services;
 
 import java.util.List;
 
-import com.savemoney.savemoney.Entities.Receita;
+import com.savemoney.savemoney.model.Receita;
 import com.savemoney.savemoney.Repositories.ReceitaRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
