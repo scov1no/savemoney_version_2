@@ -92,6 +92,8 @@ a:link{
 
 .card-group img{
     margin-left: 120px;
+    max-width: 150px;
+    max-height: 140px;
 }
 .card{
 
@@ -149,21 +151,29 @@ a:link{
 }
 
 .item3_index{
-    grid-area: main_2;   
+    grid-area: main_2;
     margin: 80px;
+
 }
 
-.item3_index h2{
+.item3_index h1{
     text-align: center;
     font-size: 40px;
 }
-
+.item3_index hr{
+    background: black;
+    border-top: 5px solid black ;
+}
+.item3_index h3{
+    text-align: center;
+    font-size: 28px;
+}
 
 .item3_index p{
-    padding: 50px;
-    font-size: 1.7vw;
-    
-}
+     text-align: center;
+     font-size: 20px;
+
+ }
 
 
 .item4_index{
@@ -1010,3 +1020,5 @@ hr{
 .view_none{
     display: none;
 }
+
+
