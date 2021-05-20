@@ -1,4 +1,4 @@
-package com.savemoney.savemoney.model;
+package com.savemoney.savemoney.Entities;
 
 import java.io.Serializable;
 
