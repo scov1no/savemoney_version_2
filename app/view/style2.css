@@ -659,8 +659,8 @@ a:link{
 @media only screen and (max-width:460px){
 
     .container_index{
-        grid-template-columns: 375px;
-        grid-template-rows: 60px repeat(3, 230px)  60px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr repeat(3, 230px)  60px;
         grid-template-areas: 
         "header" 
         "main_1"
@@ -673,16 +673,9 @@ a:link{
 
     .item1_index{
         grid-area: header;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content:space-around;    
-        align-items: center;
-        padding: 0px 20px 0px;
-        word-break: break-all;
+
         }
-    .item1_index button{
-        margin-left: 20px;
-    }
+
 
     .item1_index h1{
         font-size: 3vw;
