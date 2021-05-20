@@ -1,7 +1,6 @@
 {
     "recommendations": [
         "bajdzis.vscode-database",
-        "randomfractalsinc.vscode-data-preview",
-        "hediet.vscode-drawio"
+        "randomfractalsinc.vscode-data-preview"
     ]
 }

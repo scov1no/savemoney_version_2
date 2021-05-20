@@ -48,62 +48,69 @@
            
         <!--Apenas visual, mudar para auto com DB-->
         <div class="item2_dashboard item ">          
-          <div class="container">
-            <h1>Lançamentos</h1>      
-        
-            <table id="alterar_nome_daqui_id_tabela" class="table table-striped table-hover">
-                <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>Valor</th>
-                    <th>Data</th>
-                    <th>Descrição</th>
-                </tr>
-                </thead>
-                <tbody id="tbListarAlunosBody"></tbody><!--Verificar qual id vai ficar aqui para atualizar-->
-            </table>
-        
-        </div>
-      </div>        
+          <table class="table">
+            <thead>
+              <h1>Lançamentos</h1>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>               
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Pix</td>
+                <td>Vanessa</td>
+                
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>TED</td>
+                <td>Roberta</td>
+                
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Venda</td>
+                <td>Moto vendida</td>
+                
+              </tr>
+            </tbody>
+            
+            
+          </table>
            
         
-        
+        </div>
         <div class="item3_dashboard item">
-            
-            <div class="container">
-              <h1>Adicionar</h1>
-              <div class="alert alert-danger collapse" role="alert" id="div-alert-message">
-                <a class="close" onclick="esconderAlert()">×</a>
-            </div>
-            
-            <form id="form-inserir-usuario" action="listarAlunos.html">
-          
-              <div class="form-group">
-                  <label for="input-nome-receita">Nome Receita</label>
-                  <input type="text" class="form-control" id="input-nome" placeholder="Nome Receita">
+            <h1>Adicionar</h1>
+            <form action="" method="get" class="form-example">
+                <div class="form-example">
+                  <label for="nome_receita">Nome da receita:</label>
+                  <input type="text" name="nome_receita" id="receita" required>
+                </div>
+                <div class="form-example">
+                  <label for="valor_receita">Valor:</label>
+                  <input type="number" name="valor_receita" id="valor_receita" required>
+                    
+                </div>
+                <div class="form-example">
+                    <label for="data_receita">Data:</label>
+                  <input type="date" name="data_receita" id="data_receita" required>
+                </div>                
+                <div class="form-example">
+                    <label for="descricao_receita">Descrição:</label>
+                    <input type="text" name="descricao_receita" id="descricao_receita" required>
+                </div>
+              </form>
+              <div class="submit_inputs_receita">
+                <input type="submit" value="Adicionar">
+                <input type="submit" value="Editar">
+                <input type="submit" value="Exclur">
+                <input type="submit" value="Cancelar">
+                <a href="view_geral_receita.html"><input type="submit" value="View"></a> 
               </div>
-              <div class="form-group">
-                <label for="input-valor-receita">Valor</label>
-                <input type="text" class="form-control" id="input-nome" placeholder="Valor da Receita">
-              </div>
-              <div class="form-group">
-                <label for="input-data-receita">Data</label>
-                <input type="text" class="form-control" id="input-nome" placeholder="Data">
-              </div>
-              <div class="form-group">
-                <label for="input-descricao-receita">Descrição</label>
-                <input type="text" class="form-control" id="input-nome" placeholder="Descrição">
-              </div>
-              <hr>
-              <div class="submit_inputs_receita">                
-                <button type="submit" class="btn btn-primary">Adicionar</button>
-                <button type="submit" class="btn btn-primary">Editar</button>
-                <button type="submit" class="btn btn-primary">Excluir</button>
-                <button type="submit" class="btn btn-primary">Cancelar</button>
-                <button type="submit" class="btn btn-primary">Salvar</button>                
-              </div>
-            </form>
-          </div>           
         </div>
         
    
@@ -116,6 +123,28 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>   
     
+    <!--Fazendo test por aqui -->
+        <script>
+          
+          $(document).ready(function(){
+            $(".view_first").click(function(){
+              $(".view_none").slideDown(600);              
+            });
+            $(".view_first").click(function(){
+              $(".view_none").hide();
+            });
+          });
+          /*Não apagar ainda*/
+        /* 
+        $(document).ready(function(){
+          $("ul").click(function(){
+            $(".view_none").toggle();
+          });
+        });
+        */
+        
+        
+    </script> 
    
     
 </body>
