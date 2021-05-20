@@ -17,7 +17,7 @@ public class Receita implements Serializable{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id_receita;  
+    private long id_receita;
     private String nome_receita;
     private Float valor_receita;  
     private String descricao_receita;  
