@@ -22,12 +22,13 @@ public class Receita{
     private float valor_receita;
     private String descricao_receita;  
     private Instant data_receita;
-    
+
+    /*
     @ManyToOne
     @JoinColumn(name = "id_categoria_receita")
     private CategoriaR id_categoriaR;
 
-
+     */
 
 
 
@@ -71,7 +72,7 @@ public class Receita{
     public void setData_receita(Instant data_receita) {
         this.data_receita = data_receita;
     }
-
+    /*
     public CategoriaR getId_categoriaR() {
         return id_categoriaR;
     }
@@ -79,4 +80,6 @@ public class Receita{
     public void setId_categoriaR(CategoriaR id_categoriaR) {
         this.id_categoriaR = id_categoriaR;
     }
+
+     */
 }

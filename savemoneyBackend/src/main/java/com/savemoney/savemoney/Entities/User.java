@@ -28,11 +28,11 @@ public class User implements Serializable{
     @OneToMany
     @JoinColumn(name = "id_despesa")
     private List<Despesa> id_despesa = new ArrayList<>();
-
+    /*
     @OneToMany
     @JoinColumn(name = "id_receita")
     private List<Receita> id_receita = new ArrayList<>();
-    
+    */
 
     public User(){
     }
@@ -85,12 +85,12 @@ public class User implements Serializable{
     public List<Despesa> getId_despesa() {
         return this.id_despesa;
     }
-
+    /*
 
     public List<Receita> getId_receita() {
         return id_receita;
     }
-
+        */
 
     @Override
     public int hashCode() {
