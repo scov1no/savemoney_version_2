@@ -36,8 +36,8 @@ public class Receita{
         return id;
     }
 
-    public void setId(long id_receita) {
-        this.id = id_receita;
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getNome_receita() {
