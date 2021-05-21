@@ -12,14 +12,14 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "SM_receita")
-public class Receita implements Serializable{
+@Table(name="receita")
+public class Receita{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id_receita;  
+    private long id;
     private String nome_receita;
-    private Float valor_receita;  
+    private float valor_receita;
     private String descricao_receita;  
     private Instant data_receita;
     
@@ -27,25 +27,17 @@ public class Receita implements Serializable{
     @JoinColumn(name = "id_categoria_receita")
     private CategoriaR id_categoriaR;
 
-    public Receita() {
+
+
+
+
+
+    public long getId() {
+        return id;
     }
 
-    public Receita(Long id_receita, String nome_receita, Float valor_receita, String descricao_receita,
-            Instant data_receita, CategoriaR id_categoriaR) {
-        this.id_receita = id_receita;
-        this.nome_receita = nome_receita;
-        this.valor_receita = valor_receita;
-        this.descricao_receita = descricao_receita;
-        this.data_receita = data_receita;
-        this.id_categoriaR = id_categoriaR;
-    }
-
-    public Long getId_receita() {
-        return id_receita;
-    }
-
-    public void setId_receita(Long id_receita) {
-        this.id_receita = id_receita;
+    public void setId(long id_receita) {
+        this.id = id_receita;
     }
 
     public String getNome_receita() {
@@ -56,11 +48,11 @@ public class Receita implements Serializable{
         this.nome_receita = nome_receita;
     }
 
-    public Float getValor_receita() {
+    public float getValor_receita() {
         return valor_receita;
     }
 
-    public void setValor_receita(Float valor_receita) {
+    public void setValor_receita(float valor_receita) {
         this.valor_receita = valor_receita;
     }
 
@@ -87,8 +79,4 @@ public class Receita implements Serializable{
     public void setId_categoriaR(CategoriaR id_categoriaR) {
         this.id_categoriaR = id_categoriaR;
     }
-
-    
-    
-
 }
