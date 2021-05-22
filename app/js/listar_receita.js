@@ -7,15 +7,17 @@ $(document).ready(function (){
             var html = '';
             $.each(result, function (i, data){
                 html += '<tr><td>' + data.id +'</td>';
-                html += '<tr><td>' + data. +'</td>';
-                html += '<tr><td>' + data.nome +'</td>';
-                html += '<tr><td>' + data.nome +'</td>';
-                html += '<tr><td>' + data.nome +'</td>';
-                $("#tbListarReceitas").html(html);
+                html += '<td>' + data.nome_receita +'</td>';
+                html += '<td>R$ ' + data.valor_receita +'</td>';
+                html += '<td>'+  data.descricao_receita +'</td>';
+                html += '<td>' + data.data_receita +'</td></tr>';
+                $("#tabela_listar_aluno_tbody").html(html);
             });
         }
     })
 });
+
+/*
 function removerAluno(id_receita){
     var r = confirm("Cofirma a exclusão?");
     if(r == true){
@@ -41,4 +43,5 @@ function removerAluno(id_receita){
             }
         })
     }
-}
+
+ */
