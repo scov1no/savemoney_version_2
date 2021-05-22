@@ -6,6 +6,10 @@ $(document).ready(function (){
         success: function(result){
             var html = '';
             $.each(result, function (i, data){
+                html += '<tr><td>' + data.id +'</td>';
+                html += '<tr><td>' + data. +'</td>';
+                html += '<tr><td>' + data.nome +'</td>';
+                html += '<tr><td>' + data.nome +'</td>';
                 html += '<tr><td>' + data.nome +'</td>';
                 $("#tbListarReceitas").html(html);
             });
