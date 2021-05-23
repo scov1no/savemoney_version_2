@@ -1,8 +1,11 @@
 //Processar Formulario
-$ ('#form-inserir-usuario').submit(function (event){
+$ ('#form-adicionar').submit(function (event){
     event.preventDefault();
     //Criar formData
-    var formData = {'nome': $('#input-nome').val() };
+    var formData = {'nome': $('#input-nome_receita').val(),
+                    'valor': $('#input-valor_receita').val(),
+                    'descricao': $('#input-descricao_receita').val()
+    };
 
     $.ajax({
         headers : {
@@ -10,7 +13,7 @@ $ ('#form-inserir-usuario').submit(function (event){
             'Content-Type' : 'application/json'
         },
         type: 'POST',
-        url: 'http://localhost:8080/api/aluno/incluir',
+        url: 'http://localhost:8080/api/receita/incluir',
         data: JSON.stringify(formData),
         dataType: 'json',
         encode: true,
@@ -25,3 +28,4 @@ $ ('#form-inserir-usuario').submit(function (event){
 
     });
 });
+
