@@ -2,9 +2,11 @@
 $ ('#form-adicionar').submit(function (event){
     event.preventDefault();
     //Criar formData
-    var formData = {'nome': $('#input-nome_receita').val(),
-                    'valor': $('#input-valor_receita').val(),
-                    'descricao': $('#input-descricao_receita').val()
+    var formData = {
+        'nome': $('#input-nome_receita').val(),
+        'valor': $('#input-valor_receita').val(),
+        'data': $('#input-data_receita').val(),
+        'descricao': $('#input-descricao_receita').val()
     };
 
     $.ajax({

@@ -1,4 +1,4 @@
-/*GRID*/
+
 
 @import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Zen+Dots&display=swap');
@@ -206,7 +206,7 @@ a:link{
 }
 
 .container_cadastro_login{
-    grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 15vh 85vh ;
         grid-template-areas: 
         "header header" 

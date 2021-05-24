@@ -22,7 +22,7 @@ public class Receita{
     private String nome_receita;
     private float valor_receita;
     private String descricao_receita;  
-    private DateFormat data_receita;
+    private Instant data_receita;
 
     /*
     @ManyToOne
@@ -66,11 +66,11 @@ public class Receita{
         this.descricao_receita = descricao_receita;
     }
 
-    public DateFormat getData_receita() {
+    public Instant getData_receita() {
         return data_receita;
     }
 
-    public void setData_receita(DateFormat data_receita) {
+    public void setData_receita(Instant data_receita) {
         this.data_receita = data_receita;
     }
     /*
