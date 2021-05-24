@@ -1,6 +1,7 @@
 package com.savemoney.savemoney.Entities;
 
 import java.io.Serializable;
+import java.text.DateFormat;
 import java.time.Instant;
 
 import javax.persistence.Entity;
@@ -21,7 +22,7 @@ public class Receita{
     private String nome_receita;
     private float valor_receita;
     private String descricao_receita;  
-    private Instant data_receita;
+    private Instant data_receita; /*Talvez mudar esse Isntant, ao colocar Dateformat está dando erro 500. No listar.*/
 
     /*
     @ManyToOne

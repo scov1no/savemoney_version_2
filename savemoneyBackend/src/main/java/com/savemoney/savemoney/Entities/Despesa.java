@@ -26,7 +26,7 @@ public class Despesa implements Serializable{
     @ManyToOne
     @JoinColumn(name = "id_categoria_despesa")
     private CategoriaD id_categoriaD;
-    
+
     public Despesa() {
     }
 
