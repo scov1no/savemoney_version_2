@@ -50,7 +50,7 @@ public class ReceitaResource {
             receita = receita_repository.save(receita);
             return new ResponseEntity(receita, HttpStatus.OK);
         } else {
-            return new ResponseEntity("Nome do aluno é inválido", HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity("Receita é inválido", HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 

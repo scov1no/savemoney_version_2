@@ -1,8 +1,10 @@
 package com.savemoney.savemoney.Entities;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.io.Serializable;
+import java.sql.Date;
 import java.text.DateFormat;
-import java.time.Instant;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -22,7 +24,8 @@ public class Receita{
     private String nome_receita;
     private float valor_receita;
     private String descricao_receita;  
-    private Instant data_receita; /*Talvez mudar esse Isntant, ao colocar Dateformat está dando erro 500. No listar.*/
+    @DateTimeFormat(pattern = "dd/MM/yyyy HH:mm")
+    private Date data_hora_receita;
 
     /*
     @ManyToOne
@@ -66,13 +69,15 @@ public class Receita{
         this.descricao_receita = descricao_receita;
     }
 
-    public Instant getData_receita() {
-        return data_receita;
+    public Date getData_hora_receita() {
+        return data_hora_receita;
     }
 
-    public void setData_receita(Instant data_receita) {
-        this.data_receita = data_receita;
+    public void setData_hora_receita(Date data_hora_receita) {
+        this.data_hora_receita = data_hora_receita;
     }
+
+
     /*
     public CategoriaR getId_categoriaR() {
         return id_categoriaR;

@@ -1,12 +1,15 @@
 //Processar Formulario
 $ ('#form-adicionar').submit(function (event){
     event.preventDefault();
+
+    data_receita = new Date($('#input_data_receita').val());
+
     //Criar formData
     var formData = {
         'nome': $('#input-nome_receita').val(),
         'valor': $('#input-valor_receita').val(),
-        'data': $('#input-data_receita').val(),
-        'descricao': $('#input-descricao_receita').val()
+        'data': new Date().toUTCString(),
+        'descricao': $('#input-descricao_receita').val(),
     };
 
     $.ajax({
