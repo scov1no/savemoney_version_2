@@ -1,17 +1,14 @@
 package com.savemoney.savemoney.Entities;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import org.springframework.format.annotation.DateTimeFormat;
 
-import java.io.Serializable;
 import java.sql.Date;
-import java.text.DateFormat;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -23,9 +20,10 @@ public class Receita{
     private long id;
     private String nome_receita;
     private float valor_receita;
-    private String descricao_receita;  
-    @DateTimeFormat(pattern = "dd/MM/yyyy HH:mm")
-    private Date data_hora_receita;
+    private String descricao_receita;
+
+    @DateTimeFormat (pattern = "dd/MM/yyyy")
+    private Date data_receita;
 
     /*
     @ManyToOne
@@ -69,13 +67,14 @@ public class Receita{
         this.descricao_receita = descricao_receita;
     }
 
-    public Date getData_hora_receita() {
-        return data_hora_receita;
+    public Date getData_receita() {
+        return data_receita;
     }
 
-    public void setData_hora_receita(Date data_hora_receita) {
-        this.data_hora_receita = data_hora_receita;
+    public void setData_receita(Date data_receita) {
+        this.data_receita = data_receita;
     }
+
 
 
     /*

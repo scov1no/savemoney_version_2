@@ -2,14 +2,15 @@
 $ ('#form-adicionar').submit(function (event){
     event.preventDefault();
 
-    data_receita = new Date($('#input_data_receita').val());
+    Data_receita = new Date($('#input_data_receita').val());
 
     //Criar formData
     var formData = {
-        'nome': $('#input-nome_receita').val(),
-        'valor': $('#input-valor_receita').val(),
-        'data': new Date().toUTCString(),
-        'descricao': $('#input-descricao_receita').val(),
+
+        'nome': $('#input_nome_receita').val(),
+        'valor': $('#input_valor_receita').val(),
+        'data': Data_receita.toUTCString(),
+        'descricao': $('#input_descricao_receita').val(),
     };
 
     $.ajax({
