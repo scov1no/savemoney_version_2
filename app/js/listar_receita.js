@@ -10,7 +10,7 @@ $(document).ready(function (){
                 html += '<td>' + data.nome_receita +'</td>';
                 html += '<td>R$ ' + data.valor_receita +'</td>';
                 html += '<td>'+  data.descricao_receita +'</td>';
-                html += '<td>' + data.data_receita +'</td></tr>';
+                html += '<td>' + data.Data_receita +'</td></tr>';
                 $("#tabela_listar_aluno_tbody").html(html);
             });
         }

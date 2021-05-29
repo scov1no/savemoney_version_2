@@ -5,14 +5,6 @@ import java.util.List;
 import com.savemoney.savemoney.Controller.Receita_Controller;
 import com.savemoney.savemoney.Entities.Receita;
 import com.savemoney.savemoney.Repositories.ReceitaRepository;
-import com.savemoney.savemoney.Services.ReceitaService;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,7 +15,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import javax.persistence.*;
+
 @RestController
 @RequestMapping(value = "/api/receita")
 public class ReceitaResource {
@@ -44,13 +36,13 @@ public class ReceitaResource {
     }
 
     @PostMapping("/incluir")
-    public ResponseEntity<Receita> incluir(@RequestBody Receita receita) {
+    public ResponseEntity incluir(@RequestBody Receita receita) {
         Receita_Controller receita_controller = new Receita_Controller();
         if (receita_controller.Validar_Receita(receita)) {
             receita = receita_repository.save(receita);
             return new ResponseEntity(receita, HttpStatus.OK);
         } else {
-            return new ResponseEntity("Nome do aluno é inválido", HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity("Receita é inválido", HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
