@@ -9,8 +9,7 @@ $(document).ready(function (){
                 html += '<tr><td>' + data.id +'</td>';
                 html += '<td>' + data.nome_receita +'</td>';
                 html += '<td>R$ ' + data.valor_receita +'</td>';
-                html += '<td>'+  data.descricao_receita +'</td>';
-                html += '<td>' + data.Data_receita +'</td></tr>';
+                html += '<td>'+  data.descricao_receita +'</td></tr>';
                 $("#tabela_listar_aluno_tbody").html(html);
             });
         }

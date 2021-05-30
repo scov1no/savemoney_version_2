@@ -56,7 +56,7 @@ nav{
 
 .item1_index{
     grid-area: header;  
-    padding: 0px 10px 0px;
+
 
 }
 
@@ -74,7 +74,7 @@ nav{
     color: white;
 }
 .card-group img{
-    margin: 20px;
+    margin: 30px;
 }
 
 .item1-5_index{
@@ -291,8 +291,9 @@ nav{
 .item2_dashboard {
     grid-area: main;
     text-align: center;
-    padding: 10px;
 }
+
+
 
 
 
@@ -312,7 +313,8 @@ nav{
     height: 150px;
 }
 .item2_dashboard table{
-    margin: 20px;
+    margin: 0px;
+
 }
 
 .item2_dashboard h1{
@@ -322,6 +324,13 @@ nav{
     grid-area: main2;
     text-align: center;
     padding: 10px;
+}
+.item3_dashboard label{
+    padding: 10px;
+    margin-left: 40px;
+}
+.item3_dashboard input{
+    width: 500px;
 }
 .container_dashboard_2{
     grid-template-columns: 1fr 1fr ;
@@ -652,7 +661,8 @@ nav{
         height: 150px;
     }
     .item2_dashboard table{
-        margin: 20px;
+        margin: 0px;
+
     }
 
     .item2_dashboard h1{
@@ -662,6 +672,13 @@ nav{
         grid-area: main2;
         text-align: center;
         padding: 10px;
+    }
+    .item3_dashboard label{
+        padding: 10px;
+        margin-left: 90px;
+    }
+    .item3_dashboard input{
+        width: 500px;
     }
 
 
@@ -904,7 +921,8 @@ nav{
         height: 150px;
     }
     .item2_dashboard table{
-        margin: 20px;
+        margin: 0px;
+
     }
 
     .item2_dashboard h1{
@@ -914,6 +932,16 @@ nav{
         grid-area: main2;
         text-align: center;
         padding: 10px;
+    }
+    .item3_dashboard label{
+        padding: 10px;
+        margin-left: 25px;
+    }
+    .item3_dashboard input{
+        width: 300px;
+    }
+    .item3_dashboard h1{
+        font-size: 30px;
     }
     
    

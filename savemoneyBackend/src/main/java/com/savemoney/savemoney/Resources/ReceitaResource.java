@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -36,24 +37,24 @@ public class ReceitaResource {
     }
 
     @PostMapping("/incluir")
-    public ResponseEntity incluir(@RequestBody Receita receita) {
+    public ResponseEntity<Receita> incluir(@RequestBody Receita receita) {
         Receita_Controller receita_controller = new Receita_Controller();
-        if (receita_controller.Validar_Receita(receita)) {
+        if (receita_controller.validarReceita(receita)) {
             receita = receita_repository.save(receita);
             return new ResponseEntity(receita, HttpStatus.OK);
         } else {
-            return new ResponseEntity("Receita é inválido", HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity("Nome do aluno é inválido", HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
     @PutMapping("/editar")
     public ResponseEntity<Receita> editar(@RequestBody Receita receita) {
         Receita_Controller receita_controller = new Receita_Controller();
-        if (receita_controller.Validar_Receita(receita)) {
+        if (receita_controller.validarReceita(receita)) {
             receita = receita_repository.save(receita);
             return new ResponseEntity(receita, HttpStatus.OK);
         } else {
-            return new ResponseEntity("Nome do aluno é inválido", HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity("Nome da receita é inválido", HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
