@@ -9,7 +9,7 @@ $ ('#form-adicionar').submit(function (event){
 
         'nome': $('#input_nome_receita').val(),
         'valor': $('#input_valor_receita').val(),
-        'descricao': $('#input_descricao_receita').val(),
+        'descricao': $('#input_descricao_receita').val()
     };
 
     $.ajax({
