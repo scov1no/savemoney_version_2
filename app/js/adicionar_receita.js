@@ -2,14 +2,14 @@
 $ ('#form-adicionar').submit(function (event){
     event.preventDefault();
 
-    Data_receita = new Date($('#input_data_receita').val());
+    data_receita = new Date($('#input_data_receita').val());
 
     //Criar formData
     var formData = {
 
         'nome': $('#input_nome_receita').val(),
         'valor': $('#input_valor_receita').val(),
-        'data': Data_receita.toUTCString(),
+        'data': data_receita.toUTCString(),
         'descricao': $('#input_descricao_receita').val(),
     };
 
