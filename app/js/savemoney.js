@@ -10,7 +10,7 @@ function GetURLParameter(sParam) {
         }
     }
 }
-
+/*
 function formatDate(date) {
     var d = new Date(date),
         month = '' + (d.getUTCMonth() + 1),
@@ -56,3 +56,5 @@ function esconderAlert() {
     $('#div-alert-message').html("<a class='close' onclick='esconderAlert()'>×</a>");
     $('#div-alert-message').hide();
 }
+
+ */
