@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="sortcut icon" href="view/img/LOGO_SAVEMONEY.png" width="16px" height="16px">
+    <link rel="sortcut icon" href="../view/img/LOGO_SAVEMONEY.png" width="16px" height="16px">
     <title>SAVEMONEY - Receita</title>
 
     <!-- CSS only -->
@@ -44,16 +44,16 @@
           </div>
         </div>
       </nav>
-      <div class=" grid1  container_dashboard item2_dashboard">
-        <div class="item2_view_geral item2 ">
+      <div class=" grid1  container_dashboard ">
+        <div class="item2_dashboard item2 ">
             <h1>Receitas</h1>
-            <table class="table" id="tabela_listar_receitas_1">
+            <table class="table table-hover" id="tabela_listar_receitas_1">
                 <thead>
 
                 <tr>
 
-                    <th>Nome</th>
-                    <th>Valor</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Valor</th>
                 </tr>
                 </thead>
                 <tbody id="tabela_listar_aluno_tbody_1"></tbody>
@@ -62,7 +62,7 @@
             </table>
 
         </div>
-        <div class="item3_dashboard_2 item item3_dashboard item2">
+        <div class="item3_dashboard  item2">
 
             <h1>Adicionar</h1>
 
@@ -89,11 +89,10 @@
                 <hr>
                 <div class="submit_inputs_receita">
                     <input type="submit" value="Adicionar">
-                    <!--
                     <input type="submit" value="Editar">
                     <input type="submit" value="Exclur">
                     <input type="submit" value="Cancelar">
-                    -->
+
                 </div>
               </form>
 
