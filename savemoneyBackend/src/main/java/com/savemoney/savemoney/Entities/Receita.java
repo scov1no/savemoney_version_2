@@ -22,8 +22,7 @@ public class Receita{
     private float valor_receita;
     private String descricao_receita;
 
-    @DateTimeFormat (pattern = "dd/MM/yyyy")
-    private Date data_receita;
+
 
     /*
     @ManyToOne
@@ -67,13 +66,7 @@ public class Receita{
         this.descricao_receita = descricao_receita;
     }
 
-    public Date getData_receita() {
-        return data_receita;
-    }
 
-    public void setData_receita(Date data_receita) {
-        this.data_receita = data_receita;
-    }
 
 
 

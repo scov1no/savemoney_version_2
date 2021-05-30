@@ -37,27 +37,27 @@ public class ReceitaResource {
     }
 
     @PostMapping("/incluir")
-    public ResponseEntity<Aluno> incluir(@RequestBody Aluno aluno) {
-        AlunoController alunoController = new AlunoController();
-        if (alunoController.validarAluno(aluno)) {
-            aluno = alunoRepository.save(aluno);
-            return new ResponseEntity(aluno, HttpStatus.OK);
-        } else {
-            return new ResponseEntity("Nome do aluno é inválido", HttpStatus.INTERNAL_SERVER_ERROR);
-        }
-    }
-    /*
-    @PutMapping("/editar")
-    public ResponseEntity<Receita> editar(@RequestBody Receita receita) {
+    public ResponseEntity<Receita> incluir(@RequestBody Receita receita) {
         Receita_Controller receita_controller = new Receita_Controller();
-        if (receita_controller.Validar_Receita(receita)) {
+        if (receita_controller.validarReceita(receita)) {
             receita = receita_repository.save(receita);
             return new ResponseEntity(receita, HttpStatus.OK);
         } else {
             return new ResponseEntity("Nome do aluno é inválido", HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
-'*/
+
+    @PutMapping("/editar")
+    public ResponseEntity<Receita> editar(@RequestBody Receita receita) {
+        Receita_Controller receita_controller = new Receita_Controller();
+        if (receita_controller.validarReceita(receita)) {
+            receita = receita_repository.save(receita);
+            return new ResponseEntity(receita, HttpStatus.OK);
+        } else {
+            return new ResponseEntity("Nome da receita é inválido", HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
     @PostMapping("/remover")
     public Receita remover(@RequestBody Receita receita) {
         receita_repository.delete(receita);

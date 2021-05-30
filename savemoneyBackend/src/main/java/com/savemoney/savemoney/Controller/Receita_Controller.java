@@ -6,7 +6,7 @@ public class Receita_Controller {
 
 
 
-        public boolean validarAluno(Receita receita) {
+        public boolean validarReceita(Receita receita) {
             if (isNomeValido(receita)) {
                 return true;
             } else {
