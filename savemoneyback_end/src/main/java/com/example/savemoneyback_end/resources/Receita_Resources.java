@@ -51,10 +51,20 @@ public class Receita_Resources {
 
         @PutMapping("/editar")
         public ResponseEntity<Receita> editar(@RequestBody Receita receita) {
+            Receita receitaTemp =  receita_repository.findById(receita.getId());
+            if(receita.getNome_receita() != null){
+                receitaTemp.setNome_receita(receita.getNome_receita());
+            }
+            if(receita.getDescricao_receita() != null){
+                receitaTemp.setDescricao_receita(receita.getDescricao_receita());
+            }
+            if(receita.getValor_receita() != null){
+                receitaTemp.setValor_receita(receita.getValor_receita());
+            }
             Receita_Controller receita_Controller = new Receita_Controller();
-            if (receita_Controller.validarReceita(receita)) {
-                receita = receita_repository.save(receita);
-                return new ResponseEntity(receita, HttpStatus.OK);
+            if (receita_Controller.validarReceita(receitaTemp)) {
+                receitaTemp = receita_repository.save(receitaTemp);
+                return new ResponseEntity(receitaTemp, HttpStatus.OK);
             } else {
                 return new ResponseEntity("Nome da receita é inválido", HttpStatus.INTERNAL_SERVER_ERROR);
             }

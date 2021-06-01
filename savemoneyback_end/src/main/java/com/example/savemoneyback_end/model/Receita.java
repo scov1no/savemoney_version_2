@@ -17,7 +17,7 @@ public class Receita {
 
     private long id;
     private String nome_receita;
-    private double valor_receita;
+    private Double valor_receita;
     private String descricao_receita;
 
 
@@ -37,11 +37,11 @@ public class Receita {
         this.nome_receita = nome_receita;
     }
 
-    public double getValor_receita() {
+    public Double getValor_receita() {
         return valor_receita;
     }
 
-    public void setValor_receita(double valor_receita) {
+    public void setValor_receita(Double valor_receita) {
         this.valor_receita = valor_receita;
     }
 
