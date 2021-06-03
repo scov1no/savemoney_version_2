@@ -26,9 +26,11 @@ $(document).ready(function (){
             var html = '';
             $.each(result, function (i, data){
                 html += '<tr><td>' + data.nome_receita +'</td>';
+                html += '<td>R$ ' + data.valor_receita +'</td>';
                 html += '<td>R$ ' + data.valor_receita +'</td></tr>';
-                $("#tabela_listar_aluno_tbody_1").html(html);
+                $("#tabela_listar_receita_tbody_1").html(html);
             });
         }
     })
 });
+
