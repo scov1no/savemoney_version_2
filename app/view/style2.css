@@ -391,7 +391,14 @@ nav{
     padding: 20px;
     text-align: center;
 }
+.navbar-brand img{
+    max-width:210px;
+    max-height:70px;
+}
 
+.navbar-nav li {
+    padding-left: 50px;
+}
 
 /*Container Tablets*/
 
@@ -702,6 +709,10 @@ nav{
         padding: 20px;
         text-align: center;
     }
+    .navbar-brand img{
+        max-width:200px;
+        max-height:60px;
+    }
 
 }
 
@@ -976,6 +987,11 @@ nav{
         margin-right: 7px;
     }
 
+    .navbar-brand img{
+        max-width:200px;
+        max-height:50px;
+    }
+
 
 }
 table{
@@ -1017,12 +1033,12 @@ table{
 }
 
 .item_input{
-    background: linear-gradient(46.19deg, #56AB2F 5.66%, #A8E063 94.35%);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    background: #A8E063;
     color: white;
     border-radius: 10px;
+    border: 2px;
     width: 100px;
-    
+    height: 30px;;
 }
 .item_receita{
     color: rgb(58, 194, 58);
@@ -1095,7 +1111,7 @@ hr{
 
 
 
-.submit_inputs_receita input{
+.submit_inputs_receita input, button{
     margin-top: 20px;
     height: 40px;
     background: rgb(117, 181, 49);
@@ -1104,7 +1120,7 @@ hr{
     color: white;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     width: 120px;
-        margin-right: 7px;
+    margin-right: 7px;
 }
 
 .submit_inputs_despesa input{
@@ -1124,5 +1140,6 @@ hr{
 .view_none{
     display: none;
 }
+
 
 
