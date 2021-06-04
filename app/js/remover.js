@@ -12,7 +12,7 @@ function removerReceita(id_receita) {
                 'Content-Type': 'application/json'
             },
             type: 'POST',
-            url: 'http://localhost:8080/api/aluno/remover',
+            url: 'http://localhost:8080/api/receita/remover',
             data: JSON.stringify(formData),
             dataType: 'json',
             encode: true,
