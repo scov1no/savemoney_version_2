@@ -41,9 +41,9 @@ nav{
 
 .container_index{
     grid-template-columns: 1fr;
-    grid-template-rows: 40px 190px 200px 400px 200px 30px ; /*Trocar por vh*/
+    grid-template-rows:  190px 200px 400px 200px 30px ; /*Trocar por vh*/
     grid-template-areas: 
-    "header" 
+
     "main_1"
     "main_1-5"
     "main_2"
@@ -51,6 +51,7 @@ nav{
     "footer"
     ;
 }
+
 
 
 
@@ -74,7 +75,7 @@ nav{
     color: white;
 }
 .card-group img{
-    margin: 30px;
+
 }
 
 .item1-5_index{
@@ -191,7 +192,6 @@ nav{
 }
 .item5_index{
     grid-area: footer;
-    background: linear-gradient(46.19deg, #56AB2F 5.66%, #A8E063 94.35%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1139,4 +1139,15 @@ hr{
 
 .view_none{
     display: none;
+}
+
+.btn{
+    color: black;
+}
+
+.bt-login{
+    border-radius: 30px;
+    width:80px;
+    text-align:center;
+    background:#22BD3F;
 }
