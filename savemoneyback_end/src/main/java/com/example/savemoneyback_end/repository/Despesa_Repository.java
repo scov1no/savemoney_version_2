@@ -1,9 +1,9 @@
 package com.example.savemoneyback_end.repository;
 
-import com.example.savemoneyback_end.model.Receita;
+import com.example.savemoneyback_end.model.Despesa;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface Despesa_Repository extends JpaRepository<Receita, Integer> {
+public interface Despesa_Repository extends JpaRepository<Despesa, Integer> {
 
-    public Receita findById(long id);
+    public Despesa findById(long id);
 }
