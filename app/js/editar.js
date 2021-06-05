@@ -1,19 +1,19 @@
 var id_receita = GetURLParameter("id");
 
-$.ajax({
-    headers: {
-        'Content-Type': 'application/json'
-    },
-    url: 'http://localhost:8080/api/receita/get/' + id_receita,
-    type: 'GET',
-    dataType: 'json',
-    success: function (data) {
-        $("#input_nome_receita").val(data.nome_receita);
-        $("#input_valor_receita").val(data.valor_receita);
-        $("#input_descricao_receita").val(data.descricao_receita);
-    }
-})
+$(document).ready(function(){
+    $.ajax({
 
+        url: 'http://localhost:8080/api/receita/get/' + id_receita,
+        type: 'GET',
+        dataType: 'json',
+        success: function (data) {
+            $("#input_nome_receita").val(data.nome_receita);
+            $("#input_valor_receita").val(data.valor_receita);
+            $("#input_descricao_receita").val(data.descricao_receita);
+        }
+    })
+
+});
 
 
 $('#form-editar').submit(function (event) {
@@ -50,3 +50,4 @@ $('#form-editar').submit(function (event) {
     });
 
 });
+
