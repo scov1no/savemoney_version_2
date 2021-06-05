@@ -77,7 +77,8 @@ public class Receita_Resources {
         }
 
         @GetMapping("/getTotal")
-        public int getTotal() {
-            return receita_repository.findAll().size();
+        public Double gettotalreceita() {
+            return receita_repository.totalreceita();
         }
+
 }

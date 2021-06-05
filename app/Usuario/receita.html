@@ -14,36 +14,35 @@
 
 </head>
 <body>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light item2 ">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">SAVEMONEY</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-light bg-light item2 ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="../view/img/LogoDashboard.svg"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link" href="../Usuario/dashboard.html">Home</a>
                 </li>
-              <li class="nav-item">
-                <a class="nav-link"  href="#">Receita</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../Usuario/despesa.html">Despesa</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../Config/config.html">Configurações</a>
-              </li>
+                <li class="nav-item">
+                    <a class="nav-link"  href="#">Receita</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Usuario/despesa.html">Despesa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Config/config.html">Configurações</a>
+                </li>
 
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled " href="#" tabindex="-1" aria-disabled="true"><input class="item_input" type="submit" value="Sair"></a>
-              </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled bt-login " href="#" tabindex="-1" aria-disabled="true" style="color:white">Sair</a>
+                </li>
             </ul>
 
-          </div>
         </div>
-      </nav>
+    </div>
+</nav>
       <div class=" grid1  container_dashboard ">
         <div class="item2_dashboard item2 ">
             <h1>Receitas</h1>
@@ -54,9 +53,10 @@
 
                     <th scope="col">Nome</th>
                     <th scope="col">Valor</th>
+                    <th scope="col">Opções</th>
                 </tr>
                 </thead>
-                <tbody id="tabela_listar_aluno_tbody_1"></tbody>
+                <tbody id="tabela_listar_receita_tbody_1"></tbody>
 
 
             </table>
@@ -64,7 +64,7 @@
         </div>
         <div class="item3_dashboard  item2">
 
-            <h1>Adicionar</h1>
+            <h1>Adicionar Receita</h1>
 
             <div class="alert alert-danger collapse" role="alert" id="div-alert-message">
                 <a class="close" onclick="esconderAlert()">×</a>
@@ -87,12 +87,8 @@
                 </div>
                 <hr>
                 <div class="submit_inputs_receita">
-                    <input type="submit" value="Adicionar">
-                    <!--
-                    <input type="submit" value="Editar">
-                    <input type="submit" value="Exclur">
-                    <input type="submit" value="Cancelar">
-                    -->
+                    <input type="submit" name="adicionar" value="Adicionar" >
+
                 </div>
               </form>
 
@@ -111,6 +107,7 @@
         <script src="../js/listar_receita.js"></script>
         <script src="../js/adicionar_receita.js"></script>
         <script src="../js/savemoney.js"></script>
+        <script src="../js/remover.js"></script>
 
 
 </body>
