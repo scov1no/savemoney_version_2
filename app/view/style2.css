@@ -274,7 +274,7 @@ nav{
 
 .container_dashboard{
     grid-template-columns: 1fr 1fr ;
-    grid-template-rows:  1fr ;
+    grid-template-rows:  2fr ;
     grid-template-areas:"main main2";
     gap: 10px;
     margin: 10px;
@@ -285,6 +285,11 @@ nav{
 .item2_dashboard {
     grid-area: main;
     text-align: center;
+    padding:30px;
+}
+
+.item2_dashboard img{
+    margin-bottom:20px;
 }
 
 
@@ -293,7 +298,6 @@ nav{
 
 .item2_dashboard h1{
     font-size: 30px;
-    padding: 5%;
 }
 
 .item2_dashboard p{
@@ -306,10 +310,7 @@ nav{
     width: 150px;
     height: 150px;
 }
-.item2_dashboard table{
-    margin: 0px;
 
-}
 
 .item2_dashboard h1{
     text-align: center;    
@@ -1118,3 +1119,5 @@ hr{
 .nav-link{
     font-size: 3vh;
 }
+
+/**/
