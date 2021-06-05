@@ -77,7 +77,8 @@ public class Receita_Resources {
         }
 
         @GetMapping("/getTotal")
-        public int getTotal() {
-            return receita_repository.findAll().size();
+        public Double get(@PathVariable(value = "valor_receita") Double valor_receita) {
+            Double total_valores;
+            return total_valores = valor_receita + valor_receita;
         }
 }
