@@ -72,41 +72,23 @@ nav{
     width: 100px;
     background: linear-gradient(46.19deg, #56AB2F 5.66%, #A8E063 94.35%);
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    color: white;
+    color: black;
 }
-.card-group img{
 
-}
 
 .item1-5_index{
     grid-area: main_1-5;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+
     margin: 5px;
    
 }
 
-
-
-.card-group img{
-    margin-left: 120px;
-    max-width: 120vh;
-    max-height: 120vh;
-}
-.card{
-
+.item1-5_index h5{
     text-align: center;
-    margin:30px;
-    border-radius: 40px;
 }
 
-.card-deck{
-    display: flex;
-}
-.item1-5_index img{
-    padding: 5px;
-}
+
+
 
 
 
@@ -178,18 +160,30 @@ nav{
 .item4_index{
     grid-area: main_3;
     text-align: center;
-    margin: 10px;
-    padding: 10px;
+    margin-bottom: 50px;
+
     
 }
 .item4_index img{
-    height: 200px;
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
 
 }
 
-.item4_index h1{
-    margin: 20px;
+.item4_index div{
+    margin: 10px;
+    padding: 15px;
 }
+.item4_index h5{
+    margin: auto;
+}
+
+.card img{
+    margin:auto;
+
+}
+
 .item5_index{
     grid-area: footer;
     display: flex;
@@ -408,9 +402,9 @@ nav{
 
     .container_index{
         grid-template-columns: 1fr;
-        grid-template-rows: 40px 190px 200px 400px 200px 30px ; /*Trocar por vh*/
+        grid-template-rows:  190px 200px 400px 200px 30px ; /*Trocar por vh*/
         grid-template-areas:
-        "header"
+
         "main_1"
         "main_1-5"
         "main_2"
@@ -423,7 +417,7 @@ nav{
 
     .item1_index{
         grid-area: header;
-        padding: 0px 10px 0px;
+        padding: 0 10px 0;
 
     }
 
@@ -436,21 +430,7 @@ nav{
     }
 
 
-    .card-group img{
-        margin-left: 15px;
-        width: 30vh;
-        height: 30vh;
-    }
-    .card{
 
-        text-align: center;
-        margin:30px;
-        border-radius: 40px;
-    }
-
-    .card-deck{
-        display: flex;
-    }
     .item1-5_index img{
         padding: 5px;
     }
@@ -492,7 +472,7 @@ nav{
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
         border: none;
         border-radius: 60px;
-        color: white;
+        color: black;
 
     }
 
@@ -527,9 +507,7 @@ nav{
 
 
     }
-    .item4_index h1{
-        font-size: 60px;
-    }
+
 
 
 
@@ -725,9 +703,9 @@ nav{
 
     .container_index{
         grid-template-columns: 1fr;
-        grid-template-rows: 40px 150px 100px 300px 200px 10px ; /*Trocar por vh*/
+        grid-template-rows: 150px 100px 300px 200px 10px ; /*Trocar por vh*/
         grid-template-areas:
-        "header"
+
         "main_1"
         "main_1-5"
         "main_2"
@@ -759,21 +737,7 @@ nav{
     }
 
 
-    .card-group img{
-        width: 30vh;
-        height: 30vh;
-        margin-left: 120px;
-    }
-    .card{
 
-        text-align: center;
-        margin:30px;
-        border-radius: 40px;
-    }
-
-    .card-deck{
-        display: flex;
-    }
     .item1-5_index img{
         padding: 5px;
     }
@@ -810,7 +774,7 @@ nav{
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
         border: none;
         border-radius: 60px;
-        color: white;
+        color: black;
 
     }
 
@@ -845,9 +809,7 @@ nav{
 
 
     }
-    .item4_index h1{
-        font-size: 40px;
-    }
+
 
 
 
