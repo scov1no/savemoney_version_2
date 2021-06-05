@@ -4,7 +4,7 @@ $.ajax({
     headers: {
         'Content-Type': 'application/json'
     },
-    url: 'http://localhost:8080/api/aluno/get/' + id_receita,
+    url: 'http://localhost:8080/api/receita/get/' + id_receita,
     type: 'GET',
     dataType: 'json',
     success: function (data) {
@@ -16,33 +16,32 @@ $.ajax({
 
 
 
-$('#form-editar-usuario').submit(function (event) {
+$('#form-editar').submit(function (event) {
     event.preventDefault();
 
 
-
+    //Editar receita
     var formData = {
-        'id': id_aluno,
-        'matricula': $('#input-matricula').val(),
-        'nome': $('#input-nome').val(),
-        'nascimento': nascimento.toUTCString(),
-        'dataHoraCadastro': dataHoraCadastro.toUTCString()
+        'id': id_receita,
+        'nome_receita': $('#input_none_receita').val(),
+        'valor_receita': $('#input_valor_receia').val(),
+        'descricao_receita': $('#input_descricao_receita').val()
+
     };
 
     $.ajax({
         headers: {
-            'Access-Control-Allow-Origin': '*',
+
             'Accept': 'application/json',
             'Content-Type': 'application/json',
-            'Authorization': 'Beaver ' + $.cookie('jwt_token'),
-        },
+            },
         type: 'PUT',
-        url: 'http://localhost:8080/api/aluno/editar',
+        url: 'http://localhost:8080/api/receita/editar',
         data: JSON.stringify(formData),
         dataType: 'json',
         encode: true,
         success: function (data) {
-            location.href = 'listarAlunos.html';
+            location.href = 'receita.html';
         },
         error: function (data) {
             $('#div-alert-message').prepend(data.responseText);
