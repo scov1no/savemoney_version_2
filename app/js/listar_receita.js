@@ -8,7 +8,7 @@ $(document).ready(function (){
             $.each(result, function (i, data){
                 html += '<tr><td>' + data.id +'</td>';
                 html += '<td>' + data.nome_receita +'</td>';
-                html += '<td><p>R$</p> ' + data.valor_receita +'</td>';
+                html += '<td>R$ ' + data.valor_receita +'</td>';
                 html += '<td>'+  data.descricao_receita +'</td></tr>';
 
 
