@@ -1,4 +1,4 @@
-var id_receita = GetURLParameter("id");
+let id_receita = GetURLParameter("id");
 
 $(document).ready(function(){
     $.ajax({
@@ -23,8 +23,8 @@ $('#form-editar').submit(function (event) {
     //Editar receita
     var formData = {
         'id': id_receita,
-        'nome_receita': $('#input_none_receita').val(),
-        'valor_receita': $('#input_valor_receia').val(),
+        'nome_receita': $('#input_nome_receita').val(),
+        'valor_receita': $('#input_valor_receita').val(),
         'descricao_receita': $('#input_descricao_receita').val()
 
     };
@@ -41,11 +41,10 @@ $('#form-editar').submit(function (event) {
         dataType: 'json',
         encode: true,
         success: function (data) {
-            location.href = 'receita.html';
+            location.href = '../Usuario/receita.html';
         },
-        error: function (data) {
-            $('#div-alert-message').prepend(data.responseText);
-            $('#div-alert-message').fadeIn();
+        error: function(data){
+            alert("Ocorreu um erro ao editar aluno");
         }
     });
 
