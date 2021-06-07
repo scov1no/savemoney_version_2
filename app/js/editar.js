@@ -41,7 +41,7 @@ $('#form-editar').submit(function (event) {
         dataType: 'json',
         encode: true,
         success: function (data) {
-            location.href = 'receita.html';
+            location.href = '../Usuario/receita.html';
         },
         error: function (data) {
             $('#div-alert-message').prepend(data.responseText);
