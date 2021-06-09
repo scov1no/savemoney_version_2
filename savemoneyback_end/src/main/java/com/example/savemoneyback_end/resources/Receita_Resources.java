@@ -75,10 +75,10 @@ public class Receita_Resources {
             receita_repository.delete(receita);
             return receita;
         }
-
-        @GetMapping("/getTotal")
-        public Double gettotalreceita() {
-            return receita_repository.totalreceita();
+        /*Procurar uma solução*/
+        @GetMapping("/gettotal")
+        public List<Receita> getTotalreceita() {
+            return receita_repository.findAll();
         }
 
 }
