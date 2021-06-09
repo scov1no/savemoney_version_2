@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="sortcut icon" href="../view/img/LOGO_SAVEMONEY.png" width="16px" height="16px">
-  <title>SAVEMONEY - Editar Despesa</title>
+  <title>SAVEMONEY - EDITAR</title>
 
   <!-- CSS only -->
   <!-- CSS only -->
@@ -27,7 +27,7 @@
           <a class="nav-link" href="../Usuario/dashboard.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"  href="../Usuario/receita.html">Receita</a>
+          <a class="nav-link"  href="#">Receita</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="../Usuario/despesa.html">Despesa</a>
@@ -46,7 +46,7 @@
 </nav>
 
 
-
+</div>
 <div class="item3_dashboard  item2">
 
   <h1>Editar</h1>
@@ -55,30 +55,29 @@
     <a class="close" onclick="esconderAlert()">×</a>
   </div>
 
-  <form action="../Usuario/despesa.html"  class="form-example" id="form-editar-despesa">
+  <form action="../Usuario/receita.html"  class="form-example" id="form-editar">
 
     <div class="form-example">
-      <label for="input_nome_despesa">Nome da receita:</label>
-      <input type="text"  id="input_nome_despesa" placeholder="nome_despesa">
+      <label for="input_nome_receita">Nome da receita:</label>
+      <input type="text"  id="input_nome_receita" placeholder="nome_receita" disabled>
     </div>
     <div class="form-example">
-      <label for="input_valor_despesa">Valor:</label>
-      <input type="number"  step=".01" name="valor_despesa" id="input_valor_despesa" placeholder="valor_despesa">
+      <label for="input_valor_receita">Valor:</label>
+      <input type="number"  step=".01" name="valor_receita" id="input_valor_receita" placeholder="valor_receita" disabled>
     </div>
 
     <div class="form-example">
-      <label for="input_descricao_despesa">Descrição:</label>
-      <input type="text" name="descricao_despesa" id="input_descricao_despesa" placeholder="descricao_despesa">
+      <label for="input_descricao_receita">Descrição:</label>
+      <input type="text" name="descricao_receita" id="input_descricao_receita" placeholder="descricao_receita" disabled>
     </div>
     <hr>
-    <a   href="../Usuario/despesa.html" ><button class="bt-login">Voltar</button></a>
-    <button type="submit" class="bt-login ">Salvar</button>
+    <a  href="../Usuario/despesa.html"><button type="submit" class="bt-login ">Voltar</button></a>
 
 
   </form>
 
 </div>
-
+</div>
 
 
 
@@ -96,7 +95,6 @@
 <script src="../js/savemoney.js"></script>
 <script src="../js/remover.js"></script>
 <script src="../js/editar.js"></script>
-
 
 </body>
 </html>

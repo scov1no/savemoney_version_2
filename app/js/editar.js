@@ -44,9 +44,61 @@ $('#form-editar').submit(function (event) {
             location.href = '../Usuario/receita.html';
         },
         error: function(data){
-            alert("Ocorreu um erro ao editar aluno");
+            alert("Ocorreu um erro ao editar receita");
         }
     });
 
 });
 
+/*Despesa*/
+let id_despesa = GetURLParameter("id");
+
+$(document).ready(function(){
+    $.ajax({
+
+        url: 'http://localhost:8080/api/despesa/get/' + id_despesa,
+        type: 'GET',
+        dataType: 'json',
+        success: function (data) {
+            $("#input_nome_despesa").val(data.nome_despesa);
+            $("#input_valor_despesa").val(data.valor_despesa);
+            $("#input_descricao_despesa").val(data.descricao_despesa);
+        }
+    })
+
+});
+
+
+$('#form-editar-despesa').submit(function (event) {
+    event.preventDefault();
+
+
+    //Editar receita
+    var formData = {
+        'id': id_despesa,
+        'nome_despesa': $('#input_nome_despesa').val(),
+        'valor_despesa': $('#input_valor_despesa').val(),
+        'descricao_despesa': $('#input_descricao_despesa').val()
+
+    };
+
+    $.ajax({
+        headers: {
+
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+        },
+        type: 'PUT',
+        url: 'http://localhost:8080/api/despesa/editar',
+        data: JSON.stringify(formData),
+        dataType: 'json',
+        encode: true,
+        success: function (data) {
+            location.href = '../Usuario/despesa.html';
+        },
+        error: function(data){
+            alert("Ocorreu um erro ao editar despesa");
+        }
+    });
+
+});

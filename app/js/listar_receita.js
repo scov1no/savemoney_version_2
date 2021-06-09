@@ -28,7 +28,8 @@ $(document).ready(function (){
                 html += '<tr><td>' + data.nome_receita +'</td>';
                 html += '<td>R$ ' + data.valor_receita +'</td>';
                 html += '<td><a href="#" onclick="removerReceita(' + data.id +')"><img src="../view/img/trash.svg"  alt=""></a>';
-                html += '<a href="../Usuario/editar_receita.html?id=' + data.id +' "><img src="../view/img/rubber.svg"  alt=""></a></td></tr>';
+                html += '<a href="../Usuario/editar_receita.html?id=' + data.id +' "><img src="../view/img/rubber.svg"  alt=""></a>';
+                html += '<a href="../Usuario/view_receita.html?id=' + data.id +' "><img src="../view/img/eye.svg"  alt=""></a></td></tr>';
                 $("#tabela_listar_receita_tbody_1").html(html);
             });
         }
