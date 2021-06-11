@@ -1,0 +1,409 @@
+{
+  "id": "54f75176-043e-4b1c-9bcd-510cd11ebd85",
+  "version": "2.0",
+  "name": "Savemoney",
+  "url": "http://localhost:63343/savemoney_project_2/project_savemoney_2/app/Usuario/dashboard.html",
+  "tests": [{
+    "id": "7dfa1973-fac8-465f-af15-80359e5515e3",
+    "name": "1 add",
+    "commands": [{
+      "id": "efbb981c-52f2-43b1-b682-8726677c1a65",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:63343/savemoney_project_2/project_savemoney_2/app/Usuario/dashboard.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb50a05f-1af9-4f43-9ab2-22e9b66a2ee1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "586x586",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "124756c9-cc72-4f7f-a690-47d3e3500310",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-toggler-icon",
+      "targets": [
+        ["css=.navbar-toggler-icon", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd0a868d-1b42-4ee6-813b-34a4c9a82e00",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Receita",
+      "targets": [
+        ["linkText=Receita", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Receita')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '../Usuario/receita.html')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Receita')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7885bd1-b85e-422b-9007-03b37b810d4a",
+      "comment": "",
+      "command": "click",
+      "target": "id=input_nome_receita",
+      "targets": [
+        ["id=input_nome_receita", "id"],
+        ["name=nome_receita", "name"],
+        ["css=#input_nome_receita", "css:finder"],
+        ["xpath=//input[@id='input_nome_receita']", "xpath:attributes"],
+        ["xpath=//form[@id='form-adicionar']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19885b7b-06a0-4fa6-b0e4-7ef257cf9141",
+      "comment": "",
+      "command": "type",
+      "target": "id=input_nome_receita",
+      "targets": [
+        ["id=input_nome_receita", "id"],
+        ["name=nome_receita", "name"],
+        ["css=#input_nome_receita", "css:finder"],
+        ["xpath=//input[@id='input_nome_receita']", "xpath:attributes"],
+        ["xpath=//form[@id='form-adicionar']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "test1"
+    }, {
+      "id": "bae8c63b-a8c4-403b-a89f-c944f5328b7a",
+      "comment": "",
+      "command": "click",
+      "target": "id=input_descricao_receita",
+      "targets": [
+        ["id=input_descricao_receita", "id"],
+        ["name=descricao_receita", "name"],
+        ["css=#input_descricao_receita", "css:finder"],
+        ["xpath=//input[@id='input_descricao_receita']", "xpath:attributes"],
+        ["xpath=//form[@id='form-adicionar']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b72793e-0963-46db-ad16-2aaaf36776c8",
+      "comment": "",
+      "command": "type",
+      "target": "id=input_descricao_receita",
+      "targets": [
+        ["id=input_descricao_receita", "id"],
+        ["name=descricao_receita", "name"],
+        ["css=#input_descricao_receita", "css:finder"],
+        ["xpath=//input[@id='input_descricao_receita']", "xpath:attributes"],
+        ["xpath=//form[@id='form-adicionar']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "test1"
+    }, {
+      "id": "48a30248-929c-4cc1-b98b-d3e43d09daa3",
+      "comment": "",
+      "command": "click",
+      "target": "id=input_valor_receita",
+      "targets": [
+        ["id=input_valor_receita", "id"],
+        ["name=valor_receita", "name"],
+        ["css=#input_valor_receita", "css:finder"],
+        ["xpath=//input[@id='input_valor_receita']", "xpath:attributes"],
+        ["xpath=//form[@id='form-adicionar']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8218ca89-b5d6-4ae4-938b-576ff476db91",
+      "comment": "",
+      "command": "type",
+      "target": "id=input_valor_receita",
+      "targets": [
+        ["id=input_valor_receita", "id"],
+        ["name=valor_receita", "name"],
+        ["css=#input_valor_receita", "css:finder"],
+        ["xpath=//input[@id='input_valor_receita']", "xpath:attributes"],
+        ["xpath=//form[@id='form-adicionar']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123.23"
+    }, {
+      "id": "fcb32ce1-a63e-4a0c-b693-f58d5dfb8481",
+      "comment": "",
+      "command": "click",
+      "target": "name=adicionar",
+      "targets": [
+        ["name=adicionar", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='adicionar']", "xpath:attributes"],
+        ["xpath=//form[@id='form-adicionar']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9e340ef-2ade-4393-8817-dcabaa030af9",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=td:nth-child(2)",
+      "targets": [
+        ["css=td:nth-child(2)", "css:finder"],
+        ["xpath=//tbody[@id='tabela_listar_receita_tbody_1']/tr/td[2]", "xpath:idRelative"],
+        ["xpath=//td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'R$ 123.23')]", "xpath:innerText"]
+      ],
+      "value": "R$ 123.23"
+    }]
+  }, {
+    "id": "4e0ef7a4-98cc-4543-beee-1d68a9d1061a",
+    "name": "2 editar",
+    "commands": [{
+      "id": "cb81ee3e-bac8-4b11-a6c2-2ecb4eab4ea1",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:63343/savemoney_project_2/project_savemoney_2/app/Usuario/dashboard.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0b097275-d3cc-4211-95ee-3ed8bb19dba5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "586x586",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9af60da0-1f2b-461a-9e6b-0a2a0ad2bdc2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-toggler-icon",
+      "targets": [
+        ["css=.navbar-toggler-icon", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2be0a2a1-f0ed-4269-b80d-3179a6e2413c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Receita",
+      "targets": [
+        ["linkText=Receita", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Receita')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '../Usuario/receita.html')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Receita')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3da832e5-10e8-477e-a809-e005d7dc7ff3",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) a:nth-child(2) > img",
+      "targets": [
+        ["css=tr:nth-child(2) a:nth-child(2) > img", "css:finder"],
+        ["xpath=//tbody[@id='tabela_listar_receita_tbody_1']/tr[2]/td[3]/a[2]/img", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[3]/a[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e226dcdb-66da-419e-a3fa-3c4e9d0ed0af",
+      "comment": "",
+      "command": "click",
+      "target": "id=input_nome_receita",
+      "targets": [
+        ["id=input_nome_receita", "id"],
+        ["css=#input_nome_receita", "css:finder"],
+        ["xpath=//input[@id='input_nome_receita']", "xpath:attributes"],
+        ["xpath=//form[@id='form-editar']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f82f585-53f9-4703-9e14-0b114a98d3b0",
+      "comment": "",
+      "command": "type",
+      "target": "id=input_nome_receita",
+      "targets": [
+        ["id=input_nome_receita", "id"],
+        ["css=#input_nome_receita", "css:finder"],
+        ["xpath=//input[@id='input_nome_receita']", "xpath:attributes"],
+        ["xpath=//form[@id='form-editar']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "test2"
+    }, {
+      "id": "cd9e1502-bc92-4695-9840-3348f1b461e0",
+      "comment": "",
+      "command": "click",
+      "target": "id=input_descricao_receita",
+      "targets": [
+        ["id=input_descricao_receita", "id"],
+        ["name=descricao_receita", "name"],
+        ["css=#input_descricao_receita", "css:finder"],
+        ["xpath=//input[@id='input_descricao_receita']", "xpath:attributes"],
+        ["xpath=//form[@id='form-editar']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa2f8091-16c2-435b-b3d0-59f29c56250a",
+      "comment": "",
+      "command": "type",
+      "target": "id=input_descricao_receita",
+      "targets": [
+        ["id=input_descricao_receita", "id"],
+        ["name=descricao_receita", "name"],
+        ["css=#input_descricao_receita", "css:finder"],
+        ["xpath=//input[@id='input_descricao_receita']", "xpath:attributes"],
+        ["xpath=//form[@id='form-editar']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "test2"
+    }, {
+      "id": "8b8ff370-3eef-4ae7-9900-accb82754b58",
+      "comment": "",
+      "command": "click",
+      "target": "id=input_valor_receita",
+      "targets": [
+        ["id=input_valor_receita", "id"],
+        ["name=valor_receita", "name"],
+        ["css=#input_valor_receita", "css:finder"],
+        ["xpath=//input[@id='input_valor_receita']", "xpath:attributes"],
+        ["xpath=//form[@id='form-editar']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e4b689a-7c8e-4b82-a45e-c6e9bc922348",
+      "comment": "",
+      "command": "type",
+      "target": "id=input_valor_receita",
+      "targets": [
+        ["id=input_valor_receita", "id"],
+        ["name=valor_receita", "name"],
+        ["css=#input_valor_receita", "css:finder"],
+        ["xpath=//input[@id='input_valor_receita']", "xpath:attributes"],
+        ["xpath=//form[@id='form-editar']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "623.23"
+    }, {
+      "id": "1d08b556-eb7c-4b1a-b135-779a26cbf7a1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bt-login:nth-child(6)",
+      "targets": [
+        ["css=.bt-login:nth-child(6)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='form-editar']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6907fe6-41ad-4c14-b615-ab6d7e8bfd13",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=tr:nth-child(2) > td:nth-child(2)",
+      "targets": [
+        ["css=tr:nth-child(2) > td:nth-child(2)", "css:finder"],
+        ["xpath=//tbody[@id='tabela_listar_receita_tbody_1']/tr[2]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'R$ 623.23')]", "xpath:innerText"]
+      ],
+      "value": "R$ 623.23"
+    }]
+  }, {
+    "id": "82046815-54f5-4f29-b4db-1d3715f0878c",
+    "name": "3 view",
+    "commands": [{
+      "id": "8d0c758c-4866-4050-be4d-36a1bf98af17",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:63343/savemoney_project_2/project_savemoney_2/app/Usuario/dashboard.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "756f0e09-a3b5-4075-96db-1a79dc0c7066",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "586x586",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9097b251-5f14-4cab-b503-d12fd592b3fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-toggler-icon",
+      "targets": [
+        ["css=.navbar-toggler-icon", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf58ca68-e510-4431-b2be-1128d9b332dc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Receita",
+      "targets": [
+        ["linkText=Receita", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Receita')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '../Usuario/receita.html')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Receita')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc93248b-91e6-4546-b7ac-525d1d6466e6",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) a:nth-child(3) > img",
+      "targets": [
+        ["css=tr:nth-child(2) a:nth-child(3) > img", "css:finder"],
+        ["xpath=//tbody[@id='tabela_listar_receita_tbody_1']/tr[2]/td[3]/a[3]/img", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[3]/a[3]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "030280e2-b8a4-4926-946d-677a6e68f95e",
+      "comment": "",
+      "command": "click",
+      "target": "css=a > .bt-login",
+      "targets": [
+        ["css=a > .bt-login", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='form-editar']/a/button", "xpath:idRelative"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Voltar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fa34f9b-a2a2-41c4-9066-34964dc3391f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=tr:nth-child(2) > td:nth-child(2)",
+      "targets": [
+        ["css=tr:nth-child(2) > td:nth-child(2)", "css:finder"],
+        ["xpath=//tbody[@id='tabela_listar_receita_tbody_1']/tr[2]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'R$ 623.23')]", "xpath:innerText"]
+      ],
+      "value": "R$ 623.23"
+    }]
+  }],
+  "suites": [{
+    "id": "b99ba6bd-3a56-4380-84b4-31bc92b720d1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:63343/", "http://localhost:63343/savemoney_project_2/project_savemoney_2/app/Usuario/dashboard.html"],
+  "plugins": []
+}
