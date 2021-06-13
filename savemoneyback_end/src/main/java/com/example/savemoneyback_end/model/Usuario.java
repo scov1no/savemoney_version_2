@@ -16,7 +16,7 @@ import java.util.Collection;
 
 
 @Entity
-@Table(uniqueConstraints = @UniqueConstraint(columnNames = "email"))
+@Table(name="usuario")
 public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -27,7 +27,7 @@ public class Usuario {
     private String email;
 
     private String senha;
-
+/*
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinTable(
             name = "users_roles",
@@ -52,7 +52,7 @@ public class Usuario {
         this.roles = roles;
     }
 
-
+*/
 
     public Long getId() {
         return id;
@@ -85,6 +85,7 @@ public class Usuario {
     public void setSenha(String senha) {
         this.senha = senha;
     }
+    /*
     @Override
     public String toString() {
         return "User{" +
@@ -95,4 +96,6 @@ public class Usuario {
                 ", roles=" + roles +
                 '}';
     }
+    */
+
 }
