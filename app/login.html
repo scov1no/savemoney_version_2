@@ -1,4 +1,4 @@
-<html lang="PT-BR">
+<html lang="PT-BR" xmlns:th="http://www.w3.org/1999/xhtml">
     <head>
         <meta chasert="UTF-8">
         <title>SAVEMONEY - Acesso</title>
@@ -17,14 +17,14 @@
         </div>
         <div class="item3_cadastro_login">     
             
-                <div class="form_cadastro">
-                    <form class="form">
+                <div class="form_cadastro" >
+                    <form class="form" method="post">
                         <label for="e-mail">E-mail</label><br>
-                        <input type="text" id="e-mail" name="e-mail" placeholder="E-mail"><br>
+                        <input type="email" id="e-mail" name="e-mail" placeholder="E-mail"><br>
                         <label for="senha">Senha</label><br>
                         <input type="password" id="senha" name="senha" placeholder="Senha">
                         <p>
-                            Esqueceu a senha ? Clique aqui para recuperar
+                            <a th:href="@{cadastro}">Não tem cadastro? Clique aqui</a>
                         </p>
                         <div class="button_get">
                             <input class="botao_entrada" type="submit" value="Acessar">

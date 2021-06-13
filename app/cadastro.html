@@ -1,4 +1,4 @@
-<html lang="PT-BR">
+<html lang="PT-BR" xmlns:th="http://www.w3.org/1999/xhtml">
     <head>
         <meta chasert="UTF-8">
         <title>SAVEMONEY - Cadastro </title>
@@ -20,7 +20,7 @@
             <div class="item3_cadastro_login">     
             
                     <div class="form_cadastro">
-                        <form class="form">
+                        <form class="form" method="post" th:object="${usuario}" action="salvarUsuario">
                             <label for="nome_completo">Nome Completo</label><br>
                             <input type="text" id="nome_completo" name="nome_completo"><br>
                             <label for="e-mail">E-mail</label><br>
