@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="sortcut icon" href="../view/img/LOGO_SAVEMONEY.png" width="16px" height="16px">
+    <title>SAVEMONEY - Receita</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link href="../view/style2.css" rel="stylesheet">
+    <!--END-->
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light item2 ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="../view/img/LogoDashboard.svg"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  href="#">Receita</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="despesa.html">Despesa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Config/config.html">Configurações</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link disabled bt-login " th:action="@{/logout}" tabindex="-1" aria-disabled="true" style="color:white">Sair</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+      <div class=" grid1  container_dashboard ">
+        <div class="item2_dashboard item2 ">
+            <h2 style="padding-right: 100%">Receitas</h2>
+
+            <table class="table table-hover image_option" id="tabela_listar_receitas_1">
+                <thead>
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Valor</th>
+                    <th scope="col">Opções</th>
+                </tr>
+                </thead>
+                <tbody id="tabela_listar_receita_tbody_1"></tbody>
+            </table>
+
+        </div>
+        <div class="item3_dashboard  item2">
+
+            <h2>Adicionar Receita</h2>
+
+
+            <div class="alert alert-danger collapse" role="alert" id="div-alert-message">
+                <a class="close" onclick="esconderAlert()">×</a>
+            </div>
+
+            <form action="receita.html" class="form-example" id="form-adicionar">
+
+                <div class="form-example">
+                  <label for="input_nome_receita">Nome da receita:</label>
+                  <input type="text" name="nome_receita" id="input_nome_receita" placeholder=" Nome">
+                </div>
+                <div class="form-example">
+                  <label for="input_valor_receita">Valor:</label>
+                  <input type="number"  step=".01" name="valor_receita" id="input_valor_receita" placeholder=" Valor">
+                </div>
+
+                <div class="form-example">
+                    <label for="input_descricao_receita">Descrição:</label>
+                    <input type="text" name="descricao_receita" id="input_descricao_receita" placeholder=" Descrição">
+                </div>
+                <hr>
+                <div class="submit_inputs_receita">
+                    <input type="submit" name="adicionar" value="Adicionar" >
+
+                </div>
+              </form>
+
+        </div>
+      </div>
+
+
+
+
+
+    <!--JQUERY + BOOTSTRAP-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="../js/listar_receita.js"></script>
+        <script src="../js/adicionar_receita.js"></script>
+        <script src="../js/savemoney.js"></script>
+        <script src="../js/remover.js"></script>
+        <script src="../js/editar.js"></script>
+
+</body>
+</html>
