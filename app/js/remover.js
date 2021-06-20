@@ -1,4 +1,8 @@
 function removerReceita(id_receita) {
+    if ($.cookie('jwt_token') == null || $.cookie('jwt_token') == undefined) {
+        alert("Usuário não autenticado");
+        location.href = "login.html";
+    }
     var r = confirm("Confirma a exclusão?");
     if (r == true) {
 
@@ -8,8 +12,8 @@ function removerReceita(id_receita) {
 
         $.ajax({
             headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': 'Beaver ' + $.cookie('jwt_token'),
             },
             type: 'POST',
             url: 'http://localhost:8080/api/receita/remover',
@@ -28,6 +32,10 @@ function removerReceita(id_receita) {
 
 }
 function removerDespesa(id_despesa) {
+    if ($.cookie('jwt_token') == null || $.cookie('jwt_token') == undefined) {
+        alert("Usuário não autenticado");
+        location.href = "login.html";
+    }
     var r = confirm("Confirma a exclusão?");
     if (r == true) {
 
@@ -37,8 +45,8 @@ function removerDespesa(id_despesa) {
 
         $.ajax({
             headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': 'Beaver ' + $.cookie('jwt_token'),
             },
             type: 'POST',
             url: 'http://localhost:8080/api/despesa/remover',

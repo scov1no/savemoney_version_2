@@ -1,7 +1,15 @@
 let id_receita = GetURLParameter("id");
 
 $(document).ready(function(){
+    if ($.cookie('jwt_token') == null || $.cookie('jwt_token') == undefined) {
+        alert("Usuário não autenticado");
+        location.href = "login.html";
+    }
     $.ajax({
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Beaver ' + $.cookie('jwt_token'),
+        },
 
         url: 'http://localhost:8080/api/receita/get/' + id_receita,
         type: 'GET',
@@ -17,6 +25,10 @@ $(document).ready(function(){
 
 
 $('#form-editar').submit(function (event) {
+    if ($.cookie('jwt_token') == null || $.cookie('jwt_token') == undefined) {
+        alert("Usuário não autenticado");
+        location.href = "login.html";
+    }
     event.preventDefault();
 
 
@@ -31,10 +43,9 @@ $('#form-editar').submit(function (event) {
 
     $.ajax({
         headers: {
-
-            'Accept': 'application/json',
             'Content-Type': 'application/json',
-            },
+            'Authorization': 'Beaver ' + $.cookie('jwt_token'),
+        },
         type: 'PUT',
         url: 'http://localhost:8080/api/receita/editar',
         data: JSON.stringify(formData),
@@ -54,8 +65,15 @@ $('#form-editar').submit(function (event) {
 let id_despesa = GetURLParameter("id");
 
 $(document).ready(function(){
+    if ($.cookie('jwt_token') == null || $.cookie('jwt_token') == undefined) {
+        alert("Usuário não autenticado");
+        location.href = "login.html";
+    }
     $.ajax({
-
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Beaver ' + $.cookie('jwt_token'),
+        },
         url: 'http://localhost:8080/api/despesa/get/' + id_despesa,
         type: 'GET',
         dataType: 'json',
@@ -84,9 +102,8 @@ $('#form-editar-despesa').submit(function (event) {
 
     $.ajax({
         headers: {
-
-            'Accept': 'application/json',
             'Content-Type': 'application/json',
+            'Authorization': 'Beaver ' + $.cookie('jwt_token'),
         },
         type: 'PUT',
         url: 'http://localhost:8080/api/despesa/editar',
