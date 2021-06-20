@@ -1,5 +1,9 @@
 //Processar Formulario
 $ ('#form-adicionar').submit(function (event){
+    if ($.cookie('jwt_token') == null || $.cookie('jwt_token') == undefined) {
+        alert("Usuário não autenticado");
+        location.href = "login.html";
+    }
     event.preventDefault();
 
 
@@ -13,9 +17,9 @@ $ ('#form-adicionar').submit(function (event){
     };
 
     $.ajax({
-        headers : {
-            'Accept' : 'application/json',
-            'Content-Type' : 'application/json'
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Beaver ' + $.cookie('jwt_token'),
         },
         type: 'POST',
         url: 'http://localhost:8080/api/despesa/incluir',
