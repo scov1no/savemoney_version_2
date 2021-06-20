@@ -1,5 +1,7 @@
 package com.example.savemoneyback_end;
 
+import com.example.savemoneyback_end.filter.JwtRequestFilter;
+import com.example.savemoneyback_end.service.MyUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
