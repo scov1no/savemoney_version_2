@@ -1,9 +1,11 @@
-<html lang="PT-BR" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="pt-br" >
     <head>
-        <meta chasert="UTF-8">
+        <meta charset="UTF-8">
         <title>SAVEMONEY - Acesso</title>
-        <!--style2 não está importadando verificar-->
-        <link rel="stylesheet" href="view/style2.css">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+        <link href="view/style2.css" rel="stylesheet">
+        <!--END-->
         <link rel="sortcut icon" href="view/img/LOGO_SAVEMONEY.png" width="16px" height="16px">
     </head>
     <body>
@@ -18,13 +20,13 @@
         <div class="item3_cadastro_login">     
             
                 <div class="form_cadastro" >
-                    <form class="form" method="post">
-                        <label for="e-mail">E-mail</label><br>
-                        <input type="email" id="e-mail" name="e-mail" placeholder="E-mail"><br>
-                        <label for="senha">Senha</label><br>
-                        <input type="password" id="senha" name="senha" placeholder="Senha">
+                    <form class="form" id="form-login">
+                        <label for="input-usuario">Nome</label><br>
+                        <input type="text" id="input-usuario" name="nome" placeholder="Nome"><br>
+                        <label for="input-senha">Senha</label><br>
+                        <input type="password" id="input-senha" name="senha" placeholder="Senha">
                         <p>
-                            <a th:href="@{cadastro}">Não tem cadastro? Clique aqui</a>
+                            <a href="#">Não tem cadastro? Clique aqui</a>
                         </p>
                         <div class="button_get">
                             <input class="botao_entrada" type="submit" value="Acessar">
@@ -34,6 +36,16 @@
                 </div>
         </div>
         
-    </div>   
+    </div>
+        <!--JQUERY + BOOTSTRAP-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <!--END-->
+
+        <script src="js/savemoney.js"></script>
+        <script src="js/login.js"></script>
+        <script src="js/jquery.cookie.js"></script>
     </body>
 </html>
