@@ -19,6 +19,7 @@
     <li>David</li>
     <li>Vander</li>
     <li>Augusto</li>
+
 </ul>
 
 <p align="center"> O projeto tem como objetivo, ser um banco da fácil acesso. Que possa guarda o dinheiro dos nossos clientes com segurança e acessibilidade. Possui duas áreas, uma de receita e uma de despesa. Para o cliente ter uma visão clara dos processos realizados em sua conta. Possui uma página de dashboard onde pode ver o total de sua conta e os últimos lançamentos.    </p>
