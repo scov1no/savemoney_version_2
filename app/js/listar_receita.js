@@ -30,6 +30,10 @@ $(document).ready(function () {
 
 
     $.ajax({
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Beaver ' + $.cookie('jwt_token'),
+        },
         url: 'http://localhost:8080/api/receita/listar',
         type: 'get',
         dataType: 'json',
@@ -47,6 +51,10 @@ $(document).ready(function () {
     });
 
     $.ajax({
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Beaver ' + $.cookie('jwt_token'),
+        },
         url:'http://localhost:8080/api/receita/listar',
         type:'get',
         dataType: 'json',
