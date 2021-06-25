@@ -1,9 +1,12 @@
 //Processar Formulario
-$ ('#form-adicionar').submit(function (event){
+$(document).ready(function() {
     if ($.cookie('jwt_token') == null || $.cookie('jwt_token') == undefined) {
         alert("Usuário não autenticado");
         location.href = "login.html";
     }
+});
+$('#form-adicionar').submit(function (event){
+
     event.preventDefault();
 
 
