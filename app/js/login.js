@@ -1,9 +1,6 @@
 //Processar formulário
 $('#form-login').submit(function (event) {
-    if ($.cookie('jwt_token') == null || $.cookie('jwt_token') == undefined) {
-        alert("Usuário não autenticado");
-        location.href = "Usuario/dashboard.html";
-    }
+
     event.preventDefault();
 
     //Criar formData
@@ -14,8 +11,9 @@ $('#form-login').submit(function (event) {
 
     $.ajax({
         headers: {
+            'Accept': 'application/json',
             'Content-Type': 'application/json',
-            'Authorization': 'Beaver ' + $.cookie('jwt_token'),
+
         },
         type: 'POST',
         url: 'http://localhost:8080/api/auth/authenticate',
@@ -24,7 +22,7 @@ $('#form-login').submit(function (event) {
         encode: true,
         success: function (data) {
             $.cookie('jwt_token', data.jwt);
-            location.href = '../Usuario/dashboard.html';
+            location.href = 'Usuario/dashboard.html';
         },
         error: function (data) {
             alert("Usuário ou senha inválidos");
@@ -34,7 +32,7 @@ $('#form-login').submit(function (event) {
 
 function sair() {
     console.log("Apagar token");
-    $.removeCookie('jwt_token', {path: '/app'});
+    $.removeCookie('jwt_token', {path: 'project_savemoney_2/app'});
     console.log($.cookie('jwt_token'));
-    location.href = 'login.html';
+    location.href = 'project_savemoney_2/app/login.html';
 }

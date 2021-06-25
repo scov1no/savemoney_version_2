@@ -1,10 +1,10 @@
 //Processar Formulario
-
 $(document).ready(function() {
     if ($.cookie('jwt_token') == null || $.cookie('jwt_token') == undefined) {
         alert("Usuário não autenticado");
         location.href = "login.html";
     }
+});
     $('#form-adicionar').submit(function (event) {
         event.preventDefault();
 
@@ -28,7 +28,7 @@ $(document).ready(function() {
             dataType: 'json',
             encode: true,
             success: function (data) {
-                location.href = '../Usuario/receita.html';
+                location.href = 'receita.html';
 
             },
             error: function (data) {
@@ -37,7 +37,8 @@ $(document).ready(function() {
             }
 
         });
+
     });
 
-});
+
 
