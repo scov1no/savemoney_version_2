@@ -32,7 +32,7 @@ $('#form-login').submit(function (event) {
 
 function sair() {
     console.log("Apagar token");
-    $.removeCookie('jwt_token', {path: '/app'});
+    $.removeCookie('jwt_token', {path: 'project_savemoney_2/app'});
     console.log($.cookie('jwt_token'));
-    location.href = 'login.html';
+    location.href = 'project_savemoney_2/app/login.html';
 }
