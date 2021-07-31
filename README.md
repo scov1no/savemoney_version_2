@@ -28,7 +28,7 @@
 </div>
 
 
-<h2 align="center">🧪 TOOLS</h2>
+<h2 align="center">🧪 FERRAMENTAS</h2>
 
 <div align="center" style="display: inline_block"><br>
   <img align="center" alt="3DD1-Js" height="50" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">  
